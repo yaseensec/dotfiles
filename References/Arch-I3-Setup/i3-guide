@@ -1,0 +1,233 @@
+ (b).I3WM
+         (b1) Packages
+         >>pacman -S i3 pcmanfm rxvt-unicode xsel rxvt-perls feh (feh dependencies are imagemagick jpegexiforient) w3m nitrogen arandr lxappearance rofi picom unzip leafpad playerctl
+
+
+         (b2)I3WM-Configuration:
+
+            1.Wallpaper:feh......~/.config/i3/config or ~/.i3/config
+
+                >> exec_always --no-startup-id feh  --bg-scale /home/yaseen/1.jpg......for wallpaper....add this line to config file found in .config/i3/config or in                      .i3/config 
+
+            2.Layout and Monitors:arandr
+
+               >> Customise monitors layout in arandr save it then open the saved file from .screenlayout and it to config file .....exce_always xrandr blah blah
+
+            3.Workspaces:~/.config/i3/config or ~/.i3/config
+
+               >> Set Workspaces name using variables like.....set $ws1 "Terminals".......and switch to workspace be like.....bindsym $mod+1 workspace $ws1.......move to focused container be like.....bindsym $mod+shift+1 move container to workspace $ws1
+               >> Open Specific applications in certian workspaces using class names like.......Open the required app...then in terminal type xprop | grep CLASS and hit enter....tap the crosshair on the opened app...then in terminal you will get the info regarding the app.....find class name .....add it in i3 config file like.....assign [class="Rhythombox"] $ws10
+               >> Adding siji icons to workspace.....from view.sh in siji(download siji from git) use echo to print gylph in terminal with character code like....echo "\ue070" then copy the gylph to the required workspace......
+            
+           4.Fonts:~/.fonts.......lxappearance......~/.config/i3/config or ~/.i3/config
+           
+              >> Download the required font .....extarct it and copy the .ttf files to ~/.fonts directory
+              >> Change the font option and pixel value in ~/.config/i3/config.....like font pango:font name 14
+              >> To change the font in GTK applications.....use lxappearance to change the font and pixel value....if you cant find installed font then do next step
+              >> Change something like font value in lxapperance for current font which will create ~/.gtkrc-2.0 and ~/.config/gtk-3.0/settings.ini.....open the .gtkrc-2.0 and modify gtk-font-name as required.....open file ~/.config/gtk-3.0/settings.ini and change gtk-font-name
+              >> Check out infinality(for better font rendering)
+              >> Download the font awesome font from github.....extarct it copy the .otf to ~/.fonts directory
+              >> Find the Icon in font awesome cheatsheet website and copy the icon(gyylph)......paste it like .....set $ws1 "Terminals (icon)"......Logout and log back in
+
+            5.Rofi:~/.config/i3/config or ~/.i3/config......picom......Xresources
+             
+              >> Edit $mod+d exec dmenu run to bindsym $mod+d exec rofi -show run 
+             
+              >> add colour padding etc in ~/.Xauthority file or 
+              >> you can use rofi-theme-switcher....$mod+d ...search for rofi-theme-switcher......edit rofi themes in /usr/share/rofi/themes to the liking
+
+            6.Application Window Broders:~/.config/i3/config or ~/.i3/config
+
+              >> add follwing lines in ~/.config/i3/config
+                    
+                    for_window [class="^.*"] border pixel 2 
+                    gaps inner 8
+                    gaps outer 8
+
+           7.URXVT:~/.config/i3/config or ~/.i3/config......Xresources......VIEW 16 for Alacritty ( Terminal )
+ 
+             >> Selecting text inside urxvt automatically copies selected content.....shift+insert cn be used to paste
+             >> Also ctrl+alt+c and ctrl+alt+v also works
+             >> git clone https://github.com/simmel/urxvt-resize-font.git....then copy font resize to /usr/lib/urxvt/perl or to ~/.urxvt/ext.....
+
+             >> add follwing to .Xresources
+                        
+                   !URXVT
+
+                   !MISC
+                        URxvt.font: xft:monospace:size=11
+                        URxvt.letterSpace: -1
+                        URxvt.scrollBar: false
+                        URxvt*depth: 32 
+  
+                  !Enabling Perl Extensions
+
+                    URxvt.perl-ext-common: default,clipboard,url-select,keyboard-select,resize-font 
+ 
+                  !Resize Font                                                                        
+
+                      URxvt.keysym.C-+: resize-font:bigger  
+                      URxvt.keysym.C--: resize-font:smaller                                           
+                      URxvt.resize-font.step: 2                                                         
+                      URxvt.iso14755: false                                                              
+                      URxvt.iso14755_52: false
+
+                 !Copy and Paste
+
+                    URxvt.clipboard.autocopy: true                                                    
+                    URxvt.keysym.M-c: perl:clipboard:copy                                             
+                    URxvt.keysym.M-v: perl:clipboard:paste 
+
+                 !URL                                                                                  
+                    URxvt.keysym.M-u: perl:url-select:select_next                                      
+                    URxvt.url-select.launcher: /usr/bin/firefox                                        
+                    URxvt.url-select.underline: true 
+
+          >> Using url shortcuts.....
+
+                     Alt+u 	Enter selection mode. The last URL on your screen will be selected. You can repeat Alt+u to select the next upward URL.
+                         k 	Select next upward URL
+                         j 	Select next downward URL
+                    Return 	Open selected URL in browser and quit selection mode
+                         o 	Open selected URL in browser without quitting selection mode
+                         y 	Copy (yank) selected URL and quit selection mode
+                       Esc 	Cancel URL selection mode 
+
+
+          8.Increase Screenoff time in I3 or turnoff ......use xset -q to view current settings
+              
+                 >> add following line to ~/.config/i3/config file
+                        
+                           exec_always --no-startup-id xset s 1200/off
+                           exec_always --no-startup-id xset dpms 0 0 1200/0
+
+         9.I3 Lock
+      
+                >> yay -S betterlockscreen
+                >> betterlockscreen --update 2.jpg
+                >> add following line to ~/.config/i3/config file
+                     
+                       bindsym $mod+shift+x exec --no-startup-id betterlockscreen --lock dimblur
+
+      
+        10.I3 Blocks....(insted Check Polybar and Polybar Themes)
+
+             >>pacman -S i3 blocks sysstat acpi 
+             >>change status command in bar to i3blocks
+             >>download i3blocks-contrib from git unzip and find the needed file and copy it to /usr/share/i3blocks
+             >>cp /etc/i3blocks.conf to ~/.config/i3/i3blocks.conf
+             >>add command=/usr/share/i3blocks/$BLOCK_NAME/$BLOCK_NAME to ~/.config/i3/i3blocks.conf in general properties
+             >>change rhythmbox to clementine/deadbeef music players in media player block to get it working in i3 blocks.....change the command too(like for dead beef                 ...deadbeef --nowplaying "%a -%t") 
+             >>replace in and out values in bandwitch block with labels..(/usr/share/i3blocks/bandwidth/bandwidth)
+
+       11.Theme and Icons.......lxappearance......~/.icons.....
+
+             >>pacman/yay -S arc-gtk-theme
+             >>DOwnload sardi icon theme from sourgeforge.net/projects/sardi......extarct.....copy all the sardi themes to ~/.icons 
+             >>Use lxappearance to change theme and icons
+
+
+       12.Bash Prompt:......set powerline and bash-it apart from below powerline-shell (See Arch Wiki and Respective Git Pages)
+
+            >>pacman -S python-pip
+            >>pip install powerline-shell
+            >>mkdir -p ~/.config/powerline-shell.....cd powerline-shell...
+            >>powerline-shell --generate-config > ~/.config/powerline-shell/config.json
+            >>add  follwing to .bashrc
+                   function _update_ps1() {
+                      PS1=$(powerline-shell $?)
+                    }
+
+                    if [[ $TERM != linux && ! $PROMPT_COMMAND =~ _update_ps1 ]]; then
+                    PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
+                    fi
+            >>yay -S nerd-fonts-complete
+            >>change font in ~/.config/i3/config and ~/.Xresources to UbuntuMono Nerd Font
+            >>If there is a problem with unicode rendering then do following.....enable locales en_us...en_au.....in /etc/locale.gen.....then use command locale-              gen......then reboot
+
+
+       13.Neofetch.....~/.config/neofetch/config.conf
+
+            >>change image_backend="w3m"
+            >>chnage image_source="/home/yaseen/1.jpg"
+            >>change image_size="none" or "100px" if problem in image rendering
+
+
+       14.Adding reboot,Poweroff,Exit,Suspend,Hibernate
+          
+            >> Add following to ~/.config/i3/config 
+
+                set $mode_system (e) logout, (s) suspend, (h) hibernate, (r) reboot, (p) shutdown
+                   mode "$mode_system" {
+                 
+                   bindsym e exec --no-startup-id i3-msg exit, mode "default"
+                   bindsym s exec --no-startup-id systemctl suspend, mode "default"
+                   bindsym h exec --no-startup-id systemctl hibernate, mode "default"
+                   bindsym r exec --no-startup-id systemctl reboot, mode "default"
+                   bindsym p exec --no-startup-id systemctl shutdown, mode "default"
+
+                       # back to normal: Enter or Escape
+                         bindsym Return mode "default"
+                         bindsym Escape mode "default"
+                   }
+                   bindsym $mod+shift+e mode "$mode_system"
+
+
+            >> Also uncomment and modify HandlePowerKey=Suspend in /etc/systemd/logind.conf to change powerkey behaviour to suspend....
+            >> Then use systemctl restart systemd-logind
+
+  
+       15.DeadBeef Music Player......playerctl
+          >>pacman -S deadbeef
+          >> Download,Extract and add plugins(.so) to ~local/lib/deadbeef
+          >> Add following lines to ~/.config/i3/config  ....for key based navigation
+                 
+               bindsym $mod+shift+p exec --no-startup-id playerctl play
+               bindsym $mod+shift+u exec --no-startup-id playerctl pause
+               bindsym $mod+shift+v exec --no-startup-id playerctl next
+               bindsym $mod+shift+z exec --no-startup-id playerctl previous
+
+      16.Use alacritty as terminal
+         >> pacman -S alacritty
+         >> copy alacritty.yml from /usr/share/doc/alacritty/example to ~/.config/alacritty/alacritty.yml
+         >> config as liking
+
+      17. Brightlight for ScreenBrightness keys
+         >> installing acpilight instead of xorg-backlight works instantly
+                             (OR)
+         >> git clone https://github.com/multiplexd/brightlight
+         >> cd brightlight 
+         >> make
+         >> cp -r brightlight /usr/bin/brightness
+         >> change permissions of brightness in /sys/class/backlight/intel_backlight/....        rw-rw-r--  root video
+         >> create backlight.rules in /etc/udev/rules.d and add following lines :
+            
+ACTION=="add", SUBSYSTEM=="backlight", KERNEL=="intel_backlight", RUN+="/bin/chgrp video /sys/class/backlight/%k/brightness"
+ACTION=="add", SUBSYSTEM=="backlight", KERNEL=="intel_backlight", RUN+="/bin/chmod g+w /sys/class/backlight/%k/brightness"
+
+        >>then save
+        >> usermod -aG video yaseen
+
+
+
+
+ 
+     18.Supend with betterlockscreen and with Powerkey Single Press
+        >>create file like i3lock.service in /etc/systemd/system
+        >>Add following to /etc/systemd/system/i3lock.service
+            [Unit]
+             Description=i3lock on suspend
+             Before=suspend.target
+
+            [Service]
+            User=im
+            Type=forking
+            Environment=DISPLAY=:0
+            ExecStart=/usr/bin/betterlockscreen --lock dimblur
+
+            [Install]
+            WantedBy=suspend.target
+       >>sudo systemctl enable i3lock.service
+       >>Uncomment and modify HandlePowerKey=Suspend in /etc/systemd/logind.conf to change powerkey behaviour to suspend....
+       >>systemctl restart systemd-logind
+       >>restart

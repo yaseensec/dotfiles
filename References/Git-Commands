@@ -1,0 +1,40 @@
+git
+git init
+git add .
+git commit -m "Message"
+git remote add origin git@github.com:yaseensec/dotfiles.git
+git remote add origin2 git@gitlab.com:yaseensec/dotfiles.git
+git remote set-url --add origin git@github.com:yaseensec/dotfiles.git
+git remote -v
+git status
+git push origin master
+git push origin2 master
+git push origin master
+git pull origin master
+git pull origin2 master
+git pull --allow-unrelated-histories
+
+
+Clear Git repo history
+
+git checkout --orphan newBranch
+git add -A  # Add all files and commit them
+git commit -m "message"
+git branch -D master  # Deletes the master branch
+git branch -m master  # Rename the current branch to master
+git push -f origin master  # Force push master branch to github
+git gc --aggressive --prune=all     # remove the old files
+
+
+
+BFG Tool
+
+git clone --mirror git@gitlab.com:yaseensec/dotfiles.git
+java -jar ~/Downloads/bfg.jar --strip-blobs-bigger-than 10M dotfiles.git
+cd dotfiles.git
+git reflog expire --expire=now --all && git gc --prune=now --aggressive
+git push
+
+
+
+

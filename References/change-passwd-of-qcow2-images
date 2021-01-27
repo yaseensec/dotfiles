@@ -1,0 +1,1 @@
+virt-customize -a 'RHEL 7.7 KVM 29-10-19.qcow2'  --root-password password:1234 --uninstall cloud-init

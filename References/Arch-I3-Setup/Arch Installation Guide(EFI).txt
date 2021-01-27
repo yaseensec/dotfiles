@@ -1,0 +1,529 @@
+1.PreInstallation
+>>>>>ISO Download from Official Site and Check the Integrity of ISO using GNUPG or Avilable Checksums
+
+2.Installation
+
+(A)
+ 
+>> Enable EFI and GPT modes in Motherboard (Enable EFI under System tab if installing in Type-2 Hyper-V )
+>>Boot from Live Arch usb
+>>Check EFI using efibootmgr -v or printing contents of EFI using ls /sys/firmware/efi/efivars....(Prints EFI INFO)
+>>Check Internet using ip link or ip a.......if no ip found then use dhcpcd ens33(your network adapter name)
+>>Enable SSH using systemctl start sshd.service(helpfull to login with other os till Installtion for better font)
+>>Change password using passwd and assign new password
+>>SSH into archiso using command ssh root@"ip of arch live usb" and use assigned password
+
+(B0) LVMonLUKS
+>>Disk Parition
+  >>blkdiscard /dev/sda
+  >>fdisk /dev/sda
+  >>g
+  >>n +256M.....t.....1....../dev/sda1
+  >>n remaining....../dev/sda2
+  >>modprobe dm-crypt
+  >>cryptsetup benchmark
+  >>cryptsetup -c aes-xts-plain64 -y -s 512 luksFormat /dev/sda2
+  >>cryptsetup luksOpen /dev/vda2 lvm
+  >>ls /dev/mapper/lvm
+  >>pvcreate /dev/mapper/lvm
+  >>vgcreate main /dev/mapper/lvm
+  >>lvcreate -L 30GB -n root main
+  >>lvcreate -l 100%FREE -n home main
+  >>mkfs.vfat -n BOOT /dev/sda1
+  >>mkfs.ext4 -L root /dev/mapper/main-root
+  >>mkfs.ext4 -L home /dev/mapper/main-home
+  >>mount /dev/mapper/main-root /mnt
+  >>mkdir /mnt/home
+  >>mount /dev/mapper/main-home /mnt/home
+  >>mkdir /mnt/boot
+  >>mount /dev/sda1 /mnt/boot
+  >>pacstrap /mnt base base-devel linux linux-firmware intel-ucode mkinitcpio lvm2 vim neovim zsh
+  >>genfstab -p /mnt >> /mnt/etc/fstab
+  >>arch-chroot /mnt
+  >>ln -sf /usr/share/zoneinfo/Asia/Kolkata /etc/localtime
+  >>hwclock --systohc
+  >>vim /etc/locale.gen and uncomment en_in and en_us(to render better fonts in terminal) then save
+  >>locale-gen
+  >>add LANG=en-IN.UTF-8 to /etc/locale.conf and save
+  >>timedatectl set-ntp true
+  >>echo DarkRose > /etc/hostname
+  >> nano /etc/hosts
+  >> add 127.0.0.1 localhost
+         ::1       localhost
+         127.0.1.1 myhostname.localdomain DarkRose
+  >>vim /etc/mkinitcpio.conf......MODULES=(ext4).......HOOKS=(base udev autodetect modconf block keyboard encrypt lvm2 filesystems fsck)
+  >>mkinitcpio -p linux
+  >>passwd
+  >>pacman -S networkmanager network-manager-applet wpa_supplicant dhcpcd openssh net-tools
+  >>systemctl enable NetworkManager sshd.service
+  >>bootctl --path=/boot install
+  >>vim /boot/loader/loader.conf
+  >>     default  arch-*
+         timeout  4
+         console-mode max
+         editor   no
+  >>blkid /dev/sda2
+  >>vim /boot/loader/entries/arch.conf
+  >>    title   Arch Linux
+        linux   /vmlinuz-linux
+        initrd  /intel-ucode.img
+        initrd  /initramfs-linux.img
+        options cryptdevice=UUID=8ef2ef04-a712-4a5a-84aa-32c4d87cff90:lvm root=/dev/mapper/main-root quiet rw
+
+  >>>>Exit from chroot env using exit
+    >>umount -R /mnt
+    >> reboot
+
+
+  >>cryptsetup luksChangeKey /dev/sda2
+  >>cryptsetup luksDump /dev/sda2 | grep -i key
+  >>cryptsetup luksAddKey /dev/sda2
+  >>cryptsetup luksChangeKey /dev/sda2 -S 2
+  >>cryptsetup luksRemoveKey /dev/sda2
+  >>cryptsetup luksKillSlot /dev/sda2 2
+
+
+(B)
+
+>>Disk Partition 
+
+  >>use fdisk -l to check sda info
+  >>fdisk /dev/sda(or)b,c whereever u want to install
+  >>using g to format disk to gpt partition......w to save
+  >>partprobe /dev/sda to reread change to disk
+  >>fdisk /dev/sda
+  >> use n to create EFI partition +200M which is going to /dev/sda1
+  >> use n to create partition and create partion of desired size(like +30G) for root partiton(/) which is going to be /dev/sda2
+  >> use n to create partition and create home partition with available space which is going to be /dev/sda3
+  >> create swap partition if needed /dev/sda4 with atleast 1GB
+  >> use t to change partition type...select partition number.....use L to list partition types.....enter the respective number from the list for the selected partition like....1 for efi partion.....19 for swap and 24 for linux root and 28 for linux home
+  >> partprobe /dev/sda to reread change to disk
+  >> check with lsblk
+
+
+
+>> Disk Formating(Grub)
+
+    >> mkfs.vfat /dev/sda1
+    >> mkfs.ext4 /dev/sda2
+    >> mkfs.ext4 /dev/sda3
+    >> mkswap /dev/sda4
+  
+
+>> Mounting Partitions(Grub)
+
+   >>mount /dev/sda2 /mnt
+   >>mkdir -p /mnt/boot/efi
+   >>mount /dev/sda1 /mnt/boot/efi
+   >>mkdir -p /mnt/home
+   >>mount /dev/sda3 /mnt/home
+   >>swapon /dev/sda4
+
+>> Disk Formating(Systemd-boot)
+
+   >> mkfs.vfat /dev/sda1
+   >> mkfs.ext4 /dev/sda2
+   >> mkfs.ext4 /dev/sda3
+    >> mkswap /dev/sda4
+
+>> Mounting Partitions (Systemd-boot)
+
+   >>mount /dev/sda2 /mnt
+   >>mkdir -p /mnt/boot
+   >>mount /dev/sda1 /mnt/boot
+   >>mkdir -p /mnt/home
+   >>mount /dev/sda3 /mnt/home
+   >>swapon /dev/sda4
+
+(C) Installing Essential packages in /mnt using pacstrap 
+
+    >>pacstrap /mnt base base-devel linux linux-firmware intel-ucode
+
+(D) Generating fstab
+
+    >>genfstab -U -p /mnt >> /mnt/etc/fstab
+    >>check using cat /mnt/etc/fstab
+
+(E) Changing root to Installed system
+
+    >>arch-chroot /mnt /bin/bash (changing root to /mnt with bash env)
+
+(F) Setting Timezone and Clock
+
+    >>ln -sf /usr/share/zoneinfo/Asia/Kolkata /etc/localtime
+    >>hwclock --systohc
+
+(G) Localization
+
+    >>pacman -S nano 
+    >>nano /etc/locale.gen and uncomment en_in and en_us(to render better fonts in terminal) then save
+    >>locale-gen
+    >>add LANG=en-IN.UTF-8 to /etc/locale.conf and save
+    >>timedatectl set-ntp true
+
+(H) Hostname
+
+   >>echo arch-efi > /etc/hostname
+   >> nano /etc/hosts
+   >> add 127.0.0.1	localhost
+          ::1		localhost
+          127.0.1.1	myhostname.localdomain	arch-efi
+
+(I) Bootloader
+    
+   (Ia) Grub
+    >>pacman -S grub efibootmgr mtools dosfstools os-prober and hit enter 
+     
+    >>grub-install --target=x86_64-efi --bootloader-id=grub_uefi --recheck
+    >>verify in /boot
+    >>grub-mkconfig -o /boot/grub/grub.cfg
+
+   (Ib) Systemd
+
+    >> bootctl --path=/boot install
+    >> nano /boot/loader/loader.conf and add following and save
+       
+         default  arch.conf (or) arch-*
+         timeout  4
+         console-mode max
+         editor   no
+
+
+    >> nano /boot/loader/entries/arch.conf and add following and save
+
+        title   Arch Linux
+        linux   /vmlinuz-linux
+        initrd  /intel-ucode.img
+        initrd  /initramfs-linux.img
+        options root="LABEL=arch_os" rw (or)
+        options root=UUID=UUID of root partition rw
+
+
+   (Ic) Check arch wiki for arch silent boot
+
+
+(J) Install and Enable Req Packages
+    
+    >>pacman -S networkmanager network-manager-applet xfce4-notifyd wpa_supplicant dhcpcd openssh net-tools
+    >>systemctl enable NetworkManager sshd.service dhcpcd.service
+
+(K).Audio and MusicPlayer
+
+   >>pacman -S alsa alsa-utils alsa-plugins alsa-lib pulseaudio pulseaudio-alsa pulseaudio-bluetooth pulseaudio-equalizer pavucontrol
+   >>add load-module module-equalizer-sink ......laod-module module-dbus-protocol to /etc/pulse/default.pa....then reboot
+   >>pacman -S deadbeef kodi 
+
+(K) Finishing Installtion
+   
+    >>passwd ....Create password for root user
+    >>Exit from chroot env using exit
+    >>umount -R /mnt
+    >> reboot
+               
+                  Thats it......If everything was installed and done correct u will be greeted with Arch Grub Menu
+
+
+
+
+
+3.Post-Installtion
+
+(A) Config SSH
+    >>nano /etc/ssh/sshd_config and uncomment line "Permit Root log in" replace prohibit-password with yes
+    >>systemctl restart sshd.service
+
+(Aa)Connecting wifi (never use nm and netctl along side each other)
+
+     1.With NetworkManager
+
+       >> enable and start networkmanager ....use nmcli or nmtui to get wifi coonected in non-gui and use nm-connection editor in gui mode
+     
+    1a.Wifi-Hotstop
+
+       >> pacman -S dnsmasq.....nm-connection-editor....wifi....mode:hotspot.....wpa2 security.....shared to other computers
+
+     2.With netctl
+
+    >> sudo pacman -S netctl dialog wpa_supplicant
+    >>wifi-menu
+    >>then choose required ssid and give correct password ...processed even it says failed to connect
+    >>netctl enable wlan0-darkrose(ssid name).......systemctl enable netctl-auto@wlan0-darkrose
+    >>Configuring static ip..........cd /etc/netctl......open config file of req ssid and change ip=static......then add Address=('192.168.0.30/24')......Gateway=('192.168.0.1').....DNS=('8.8.8.8' '1.1.1.1').....save.......netctl reenable wlan0-darkrose........  netctl start wlan0-darkrose
+               
+(B) Adding Sudo User
+
+   >>useradd -m -g users -G wheel -s /bin/bash yaseen
+   >> passwd yaseen
+   >>EDITOR=nano visudo
+   >>add line yaseen ALL=(ALL) ALL under root at 'User Privilege Specification"
+   >>uncomment %wheel ALL=(ALL) ALL 
+   >>pacman -S sudo
+
+(C) Install Yay (Aur repo helper)
+
+   >> pacman -S git go
+   >> git clone https://aur.archlinux.org/yay.git
+   >> cd yay
+   >> makepkg -si
+   >> yay -Syyuu (as non root user)
+
+(Ca) Install paru
+    >> pacman -S git rust
+    >>git clone https://aur.archlinux.org/paru.git
+    >> cd paru
+    >> makepkg -si
+    >>paru -Syyuu
+
+4.Installing GUI
+
+(A) XORG
+   >>pacman -S xorg-apps   
+   >>pacman -S xorg-server xorg-xinit mesa xorg-twm xterm xorg-xclock
+   >>pacman -S linux-headers
+   >>check graphic drivers using lspci | grep -e VGA
+   >>pacman -S xf86-video-vmware (for VMWARE)
+   >>then use startx to start basic GUI
+   >>nearly 275 packages after this step without go and yay install
+
+(Aa) Enable Touchpad
+
+    >>sudo mkdir -p /etc/X11/xorg.conf.d
+    >>sudo touch /etc/X11/xorg.conf.d/90-touchpad.conf
+    >>add following lines
+   Section "InputClass"
+        Identifier "touchpad"
+        MatchIsTouchpad "on"
+        Driver "libinput"
+        Option "Tapping" "on"
+        Option "AccelSpeed" "0.2"
+        Option "NaturalScrolling" "on"
+        Option "ScrollMethod" "twofinger"
+   EndSection
+
+(B) DE
+    1(a).Cinnamon
+
+     >>pacman -S cinnamon nemo-fileroller
+     >>start cinnamon using cinnamon-session
+     >>pacman -S gdm 
+     >>systemctl enable gdm
+ 
+    1(b).KDE Plasma
+   
+     >>pacman -S plasma plasma-nm sddm sddm-kcm dolphin konsole packagekit packagekit-qt5 kvantum-qt5 kwallet
+     >>systemctl enable sddm(only if not used lightdm)
+     >>reboot
+
+    2.Vmware Tools
+
+     >> Shutdown -h now
+     >> remove Arch iso and switch to Physical Iso option and Start the VM
+     >> Under Vm settings choose Install Vmware Tools
+     >> mkdir /mnt/cdrom and mount /dev/cdrom /mnt/cdrom
+     >> (or)They are mounted under /run/media/arch/vmware\ Tools/ and cd to it
+     >> cp Vmwaretools-***.tar.gz /home/yaseen/Desktop
+     >> tar -xvf Vmwaretools-***.tar.gz in /home/yaseen/Desktop
+     >> for x in {0..6}; do mkdir -p /etc/init.d/rc${x}.d; done
+     >> Then Cd to vmware-tools-distrib under /home/yaseen/Desktop
+     >> ./vmware-install.pl and proceed with default installtion options
+     >> systemctl reboot
+     >> /etc/init.d/rc6.d/K99vmware-tools start to Strat Vmware Tools
+     >> nano /etc/systemd/system/vmwaretools.service and add following lines to autostart vmware tools
+
+           /etc/systemd/system/vmwaretools.service
+
+          [Unit]
+           Description=VMWare Tools daemon
+
+           [Service]
+            ExecStart=/etc/init.d/vmware-tools start
+            ExecStop=/etc/init.d/vmware-tools stop
+            PIDFile=/var/lock/subsys/vmware
+            TimeoutSec=0
+            RemainAfterExit=yes
+ 
+            [Install]
+             WantedBy=multi-user.target
+
+       >> systemctl enable vmwaretools.service  
+
+
+
+(C)Display Managers
+
+    1(a).Lightdm
+
+         >>pacman -S lightdm lightdm-gtk-greeter......instal gtk greeter gui for greeter setting in gui
+         >> su - yaseen  then yay -s lightdm-slick-greeter
+         >>nano /etc/lightdm/lightdm.conf
+         >> uncomment and modify greeter-session=lightdm-slick-greeter/lightdm-gtk-greeter and greeter-show-manual-login=true under [Seat:*]
+         >>enable autologin by uncommenting and modifying ...autologin-guest=false......autologin-user=yaseen.....autologin-user-timeout=0
+         >>add yaseen to user group......sudo groupadd -r autologin.......sudo gpasswd -a yaseen autologin....
+         >>hide usernames at lightdm screen by uncommenting and  modifying......greeter-hide-users=true
+
+         >>systemctl enable lightdm
+         >> nano /etc/lightdm/slick-greeter.conf  or nano /etc/lightdm/lightdm-gtk-greeter.conf and add following for Image,theme and position
+                 
+                   [greeter]
+                     theme-name = Breeze-Dark
+                     icon-theme-name = breeze-dark
+                     background = /usr/share/backgrounds/wall.jpg
+                     default-user-image = #face-wink
+                     position = 18%,center 50%,center
+                     draw-grid=flase
+
+         >> copy image to /usr/share/backgrounds (compulsary....else will have permission issues)
+         >>chown $USER:$USER .Xauthority(if login loop at lightdm)
+
+
+
+5. Optional Sofware
+   
+       >> pacman -S libreoffice firefox vlc flashplugin vscode mplayer conky conky-manager terminator 
+ 
+6.Mounting External Harddisk and android device
+  
+      >> pacman -S ntfs-3g udisks2 udiskie gvfs libmtp gvfs-mtp mtpfs android-udev
+      >> add yaseen(user) to following groups if there is a problem for automounting harddrive after installing above packages
+         sudo gpasswd -a yaseen wheel
+         sudo gpasswd -a yaseen storage
+         sudo gpasswd -a yaseen  disk
+         sudo gpasswd -a im uccp
+     >>  edit /etc/fuse.conf ...uncomment user_allow_other then restart....for android device mounting with pcmanfm
+
+7.Conky
+    Check /usr/share/conky
+  
+
+8.Bluetooth
+
+  >>pacman -S bluez bluez-utils pulseaudio-alsa pulseaudio-bluetooth blueman(For GUI)
+  >>systemctl start/enable bluetooth.service 
+  >>sudo adduser yaseen lp  .....adding user to gropu lp
+  >>check modules like module-dbus-protocol ...module-bluetooth-policy...module-bluetooth-discover....module-bluez5-device....module-bluez5-discover...loaded using pactl list short modules.....
+  >>If not loaded check modules info in /etc/pulse/default.pa or /etc/pulse/system.pa for commented(#) modules and uncomment them...then add missing modules above to the end of the file...like load-module module-bluez5-discover
+  >> Pair and Connect  bluetooth using bluetoothctl command like below
+    >>under bluetoothctl command use power on then agent on...then default-agent....then scan on....if error...check if bluetooth is blocked...with rfkill list.....if blocked use rfkill unblock all...then try again
+    >>scan will get device mac and names ....pair using pair mac id under bluetoothctl command
+    >>then Connect mac id......if any error then kill pulseaudio using pulseaudio -k and connect again
+  >>select audio profile(off,A2DP,HFP) in pavucontrol config tab which is by default off
+  >>then scan off ....then exit
+  >>add load-module module-switch-on-connect to /etc/pulse/default.pa or system.pa to auto connect headset
+  >>inside bluetoothctl ...use ...trust mac id to trust device
+  >>in /etc/bluetooth/main.conf under [Policy] uncomment and modify it to  AutoEnable=true  
+  >>For media controls use...mpris-proxy........
+  >>Create systemd script to start mprix-proxy in background/or at system startup like...
+  >>~/.config/systemd/user/mprix-proxy.service than add following
+
+    [Unit]
+     Description=Forward bluetooth midi controls via mpris2 so they are picked up      by supporting media players
+
+   [Service]
+   Type=simple
+   ExecStart=/usr/bin/mpris-proxy
+
+   [Install]
+    WantedBy=default.target
+
+  >>Then systemctl --user start/enable mpris-proxy
+  >>Use chmod -R u+w /var/lib/bluetooth if there are permissions error
+
+  >>if all the above dosent work then in /etc/pulse/default.pa comment buletooth policy and discover module blocks and add following to /usr/bin/start-pulseaudio-x11 
+      /usr/bin/pactl load-module module-bluetooth-discover
+      /usr/bin/pactl/ load-module module-bluetooth-policy 
+      /usr/bin/pactl load-module module-switch-on-connect 
+     under if [x .......]; then
+      /usr/share/pactl load.......
+
+  >>then restart......
+
+
+9.KVM/Qemu/Libvirt
+
+   a.Installation
+
+   >>sudo pacman -S qemu virt-manager virt-viewer dnsmasq vde2 bridge-utils openbsd-netcat ebtables iptables ovmf
+   >>yay -S libguestfs
+   >>sudo systemctl enable/start libvirtd.service
+   >>sudo nano /etc/libvirt/libvirtd.conf and uncomment unix_sock_group = "libvirt" and unix_sock_rw_perms = "0770"
+   >>sudo usermod -a -G libvirt $(whoami)
+   >>newgrp libvirt
+   >>sudo systemctl restart libvirtd.service
+   >>Disable default storage pool(/var/lib/libvirt/images) and add storage pool from virt manager if needed
+   >>Save and snapshots directories are located by default in /var/lib/libvirt/qemu/save and snapshot ....Change them if needed by symlinking to needed directories in the following way : 
+         >> su
+         >> cd /var/lib/libvirt/qemu
+         >> rm save snapshot
+         >> ln -s /home/user/VM/save/ /var/lib/libvirt/qemu/save
+         >> ln -s /home/user/VM/snapshot/ /var/lib/libvirt/qemu/snapshot  
+  
+
+   >>For nested Virtualization .....
+   >>sudo modprobe -r kvm_intel
+   >>sudo modprobe kvm_intel nested=1
+   >>echo "options kvm-intel nested=1" | sudo tee /etc/modprobe.d/kvm-intel.conf
+   >>systool -m kvm_intel -v | grep nested
+   >>cat /sys/module/kvm_intel/parameters/nested 
+
+   b.Creating Bridge Network
+
+   >> nmcli con show
+   >> nmcli connection show --active 
+   >> sudo nmcli con add ifname br0 type bridge con-name br0
+   >> sudo nmcli con add type bridge-slave ifname enp1s0 master br0
+   >> nmcli connection show
+   >> sudo nmcli con modify br0 bridge.stp no
+   >> nmcli con show
+   >> nmcli -f bridge con show br0
+   >> sudo nmcli con down "Wired connection 1"
+   >> sudo nmcli con up br0
+   >> nmcli con show
+   >> use nmtui to edit br0 and add ip gateway and dns servers
+   >> In Virt Manager Machine Settings.....Change nic Network Source to specify shared device name and add br0 at bridge name
+
+   >> we can also use nmtui to configure bridge  
+
+
+10.Mpd & Ncmpcpp
+
+   >> pacman -S mpd ncmpcpp
+   >> copy config dir's and file sfound in github.com/yaseensec/dotfiles/.config
+   >>sudo gpasswd -a mpd users(login group)
+   >>sudo gpasswd -a mpd audio
+   >> mpd && ss -tunelp | grep 6600 (to test)
+
+11.Anbox
+  
+  >> sudo pacman -S linux-headers
+  >> yay -S anbox-git anbox-image anbox-bridge anbox-modules-dkms-git
+  >> sudo modprobe ashmem_linux (if not rebooted after installation..load this modules)
+  >> sudo modprobe binder_linux (if not rebooted after installation..load this modules)
+  >> anbox-bridge && sudo systemctl start/enable anbox-container-manager.service
+  >> anbox-bridge.....needs to be started before anbox-container-manager.service for network (or)
+       Create a file /etc/systemd/system/anbox-container-manager.service.d/enable-anbox-bridge.conf and add following
+
+        [Service]
+         ExecStartPre=/usr/bin/anbox-bridge
+  >> Launch Anbox App Manager using anbox launch --package=org.anbox.appmgr --component=org.anbox.appmgr.AppViewActivity
+  >> sudo pacman -S android-tools
+  >> Download req apps from apk mirror then use adb to install apps like following..
+  >> adb devices -l
+  >> adb install /path/to/apk
+  >> adb shell pm list packages to get list of installed packages
+  >> To Launch apps from terminal....we require package and component details....which can be obtained by following commands
+  >> adb shell pm list packages | grep sms... will get package names which contains sms
+  >> adb shell cmd package resolve-activity --brief org.thoughtcrime.securesms | tail -n 1... will get component details of signal app where org.thoughtcrime.securesms is the package name
+  >> to launch signal app from terminal use following command .....anbox launch --package=org.thoughtcrime.securesms --component=org.thoughtcrime.securesms.RoutingActivity
+  >> adb unistall packagename to uninstall
+  >> adb uninstall -user 0 packagename (for system app)
+  >> Enable Sound......
+  >> sudo mkdir -pv /var/lib/anbox/rootfs-overlay/system/etc
+  >> sudo cp media_codecs.xml /var/lib/anbox/rootfs-overlay/system/etc/media_codecs.xml
+  >> Replace nvidia to google in said file
+  >> sudo mkdir -pv /etc/systemd/system/anbox-container-manager.service.d
+  >> sudo nano override.conf and add following and save
+       
+         Service]
+          ExecStart=
+           ExecStart=/usr/bin/anbox container-manager --daemon --privileged --data-path=/var/lib/anbox --use-rootfs-overlay
+  >> restart.....

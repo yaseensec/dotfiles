@@ -1,0 +1,56 @@
+
+Git Server (http/https and ssh)
+
+>>>>>>Tested in Centos 8
+
+>>HTTP setup with Authentication for only Push and Authentication for Clone,Pull and Push
+
+*yum update -y && yum install httpd httpd-tools git -y
+*setenforce o # To set se linux status to permissive
+*sestatus # Checking Se Linux Status
+*mkdir /srv/git # Git Repos Directory
+*Create bare repo with git-create-repo # git-create-repo is a script for creating repo with all required configs 
+*Add gitwithoutgitweb.conf file for apache in /etc/httpd/conf.d/ # Provided in References directory.The .conf file also has authentication block
+*Read through the config files properly and change parameters like repos location, auth file location etc 
+*If need authentication use something like ......htpasswd -c /srv/git/git.passwd username....then provide password
+*firewall-cmd --add-service=http --permanent
+*firewall-cmd --reload
+*systemctl start httpd 
+*systemctl enable httpd
+*git clone http://<servername.com>/git/repo.git.......or if using gitweb also we use git clone http://<servername.com>/repo.git
+
+
+>>Setting up Gitweb
+*yum install gitweb # This will install files like /etc/gitweb.conf(Config file a perl script).../etc/httpd/conf.d/git.conf (apache configuration file) and /var/www/git(where gitweb.cgi and support files are located)
+*Change parameters in /etc/gitweb.conf or Just replace the gitweb.conf which is Provided in References Directory
+*Change contents accordingly in git.conf using gitwthgitweb.conf file(Provided in References Directory) or just replace git.conf with gitwithgitweb.conf in /etc/httpd/conf.d/
+*Read through the config files properly and change parameters like repos location, auth file location etc
+*gitwithgitweb.conf has completely different approach in setting up config file than gitwithoutgitweb.conf as configuring gitweb has become more confusing while getting git clone,pull,push to work properly
+*The config files also include all https and ssl related parameters which can be commented out if not needed 
+
+>>Setting up SSL
+*yum install mod_ssl
+*mkdir /etc/ssl/private && chmod 700 /etc/ssl/private
+*openssl req -x509 -nodes -days 365 -newkey rsa:4096 -keyout /etc/ssl/private/apache-selfsigned.key -out /etc/ssl/certs/apache-selfsigned.crt
+*Fill out the prompts appropriately. The most important line is the one that requests the Common Name. You need to enter the domain name that you want to be associated with your server. You can enter the public IP address instead if you do not have a domain name.
+*openssl dhparam -out /etc/ssl/certs/dhparam.pem 4096
+*cat /etc/ssl/certs/dhparam.pem | sudo tee -a /etc/ssl/certs/apache-selfsigned.crt
+*Change/add parameters like SSLCertificateFile SSLCertificateKeyFile,Redirecting http to https and Securing SSL Parameters in <VirtualHost :443> block (ALL the Setting along with authentication and https are provided in .conf files in References Directory)
+*apachectl configtest
+*firewall-cmd --add-service=https --permanent
+*firewall-cmd --reload
+*systemctl restart httpd
+*git clone https://<servername.com>/git/repo.git.......or if using gitweb also we use git clone https://<servername.com>/repo.git
+*If git push throws error for self signed certificate then use git config --global http.sslVerify false to setup globally or git config http.sslVerify false in git repo to setup only for particular repo
+
+
+>>Configuring SSH access too to the Same Directory
+*adduser git
+*passwd git
+*su git
+*mkdir .ssh
+*chmod 700 .ssh
+*touch .ssh/authorized_keys && chmod 600 .ssh/authorized_keys
+*Now from the machine you want to clone do following.......ssh-copy-id git@<servername.com> # This copies ssh public key to authorized_keys
+*Now set ACL permissions to /srv/git directory to be used nny both apache and git user as follows .....setfacl -Rd -m user:apache:rwx git/ ....... setfacl -Rd -m user:git:rwx git/ 
+*Now we can clone using git clone git@<servername.com>:/srv/git/repo.git

@@ -1,0 +1,52 @@
+#Repo's Directory (DO not forget to change selinux settings on repos directory...like setenforce 0 after every reboot(or disable se linux 
+#completely in /etc/selinux/config SELINUX=disabled) or using semanage)
+
+SetEnv GIT_PROJECT_ROOT /srv/git
+
+
+# If you leave out GIT_HTTP_EXPORT_ALL environment variable, then Git will only serve to unauthenticated clients the repositories 
+
+#with the git-daemon-export-ok file in them, just like the Git daemon did.
+SetEnv GIT_HTTP_EXPORT_ALL
+
+# Required for git clone If only / is used then git clone http://servername/repo.git works and if /git is used then git clone http://servername/git/repo.git works
+ScriptAlias /git /usr/libexec/git-core/git-http-backend/
+
+# Allow execution of CGI
+<Directory "/usr/libexec/git-core*">
+      Options +ExecCGI -MultiViews +SymLinksIfOwnerMatch
+      AllowOverride None
+      Require all granted
+</Directory>
+
+#RewriteCond %{QUERY_STRING} service=git-receive-pack [OR] # I could n't find any difference by enabling this and following 2 lines
+#RewriteCond %{REQUEST_URI} /git-receive-pack$
+#RewriteRule ^/git/ - [E=AUTHREQUIRED:yes]
+
+
+
+# Repository URL access configuration with authentication for both clone and push/pull
+<LocationMatch "^/git/.*$">
+     #Order deny,allow  # Un Comment only if using RewriteCond and RewriteRule..
+     #Deny from env=AUTHREQUIRED ## Un Comment only if using RewriteCond and RewriteRule..
+     AuthType Basic
+     AuthName "Git Access"
+     AuthUserFile /srv/git/git.passwd
+     Require valid-user
+</LocationMatch>
+
+# Repository URL access	configuration with authentication for only push
+#<LocationMatch "^/git/.*/git-receive-pack$">
+#	AuthType Basic
+#	AuthName "Git Access"
+#        AuthUserFile /srv/git.passwd
+#	Require valid-user
+#</LocationMatch>
+
+
+#<Directory "/var/www/git">
+#Dav On
+#Options Indexes FollowSymLinks
+#AllowOverride None
+#Require all granted
+#</Directory>
