@@ -486,7 +486,8 @@
 
 10.Mpd & Ncmpcpp
 
-   >> pacman -S mpd ncmpcpp
+   >> pacman -S mpd ncmpcpp mpc mpdris2
+   >> mpc update
    >> copy config dir's and file sfound in github.com/yaseensec/dotfiles/.config
    >>sudo gpasswd -a mpd users(login group)
    >>sudo gpasswd -a mpd audio

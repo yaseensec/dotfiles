@@ -13,6 +13,8 @@
 .config/mpd/*
 !.config/mpd/mpd.conf
 !.config/ncmpcpp
+.config/ncmpcpp/*
+!.config/ncmpcpp/config
 !.config/neofetch
 !.config/polybar
 !.config/picom

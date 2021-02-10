@@ -15,7 +15,7 @@
 
 # Command Line History (newest to oldest):
 :q
-|2,0,1611751663,,"q"
+|2,0,1612413923,,"q"
 :w
 |2,0,1611750903,,"w"
 :wq
@@ -41,38 +41,54 @@
 |3,1,0,1,1,0,1611749349,"   >>pacman -S alsa alsa-utils alsa-plugins alsa-lib pulseaudio pulseaudio-alsa pulseaudio-bluetooth pulseaudio-equalizer pavucontrol"
 
 # File marks:
-'0  1  0  ~/.zshrc
-|4,48,1,0,1611751663,"~/.zshrc"
-'1  429  44  ~/.config/i3/config
-|4,49,429,44,1611750950,"~/.config/i3/config"
-'2  1  0  ~/.config/i3/config
-|4,50,1,0,1611750258,"~/.config/i3/config"
+'0  1  0  ~/Git/local/local1/.git/MERGE_MSG
+|4,48,1,0,1612413923,"~/Git/local/local1/.git/MERGE_MSG"
+'1  1  0  ~/.zshrc
+|4,49,1,0,1611751663,"~/.zshrc"
+'2  429  44  ~/.config/i3/config
+|4,50,429,44,1611750950,"~/.config/i3/config"
 '3  1  0  ~/.config/i3/config
 |4,51,1,0,1611750258,"~/.config/i3/config"
-'4  270  0  ~/.config/picom/picom.conf
-|4,52,270,0,1611750240,"~/.config/picom/picom.conf"
-'5  398  5  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,53,398,5,1611749697,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
-'6  294  8  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,54,294,8,1611748414,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
-'7  232  0  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,55,232,0,1611747715,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
-'8  13  22  ~/.config/polybar/scripts/check-all-updates.sh
-|4,56,13,22,1611747693,"~/.config/polybar/scripts/check-all-updates.sh"
-'9  1  6  ~/.xinitrc
-|4,57,1,6,1611740538,"~/.xinitrc"
+'4  1  0  ~/.config/i3/config
+|4,52,1,0,1611750258,"~/.config/i3/config"
+'5  270  0  ~/.config/picom/picom.conf
+|4,53,270,0,1611750240,"~/.config/picom/picom.conf"
+'6  398  5  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
+|4,54,398,5,1611749697,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
+'7  294  8  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
+|4,55,294,8,1611748414,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
+'8  232  0  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
+|4,56,232,0,1611747715,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
+'9  13  22  ~/.config/polybar/scripts/check-all-updates.sh
+|4,57,13,22,1611747693,"~/.config/polybar/scripts/check-all-updates.sh"
 
 # Jumplist (newest first):
+-'  1  0  ~/Git/local/local1/.git/MERGE_MSG
+|4,39,1,0,1612413923,"~/Git/local/local1/.git/MERGE_MSG"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1611751663,"~/.zshrc"
 -'  1  0  ~/.zshrc
 |4,39,1,0,1611751663,"~/.zshrc"
 -'  429  44  ~/.config/i3/config
 |4,39,429,44,1611750950,"~/.config/i3/config"
 -'  429  44  ~/.config/i3/config
 |4,39,429,44,1611750950,"~/.config/i3/config"
+-'  429  44  ~/.config/i3/config
+|4,39,429,44,1611750950,"~/.config/i3/config"
+-'  429  44  ~/.config/i3/config
+|4,39,429,44,1611750950,"~/.config/i3/config"
 -'  1  0  ~/.config/i3/config
 |4,39,1,0,1611750889,"~/.config/i3/config"
 -'  1  0  ~/.config/i3/config
 |4,39,1,0,1611750889,"~/.config/i3/config"
+-'  1  0  ~/.config/i3/config
+|4,39,1,0,1611750889,"~/.config/i3/config"
+-'  1  0  ~/.config/i3/config
+|4,39,1,0,1611750889,"~/.config/i3/config"
+-'  1  0  ~/.config/i3/config
+|4,39,1,0,1611750258,"~/.config/i3/config"
+-'  1  0  ~/.config/i3/config
+|4,39,1,0,1611750258,"~/.config/i3/config"
 -'  1  0  ~/.config/i3/config
 |4,39,1,0,1611750258,"~/.config/i3/config"
 -'  1  0  ~/.config/i3/config
@@ -93,6 +109,38 @@
 |4,39,270,0,1611750240,"~/.config/picom/picom.conf"
 -'  270  0  ~/.config/picom/picom.conf
 |4,39,270,0,1611750240,"~/.config/picom/picom.conf"
+-'  270  0  ~/.config/picom/picom.conf
+|4,39,270,0,1611750240,"~/.config/picom/picom.conf"
+-'  270  0  ~/.config/picom/picom.conf
+|4,39,270,0,1611750240,"~/.config/picom/picom.conf"
+-'  270  0  ~/.config/picom/picom.conf
+|4,39,270,0,1611750240,"~/.config/picom/picom.conf"
+-'  270  0  ~/.config/picom/picom.conf
+|4,39,270,0,1611750240,"~/.config/picom/picom.conf"
+-'  270  0  ~/.config/picom/picom.conf
+|4,39,270,0,1611750240,"~/.config/picom/picom.conf"
+-'  270  0  ~/.config/picom/picom.conf
+|4,39,270,0,1611750240,"~/.config/picom/picom.conf"
+-'  270  0  ~/.config/picom/picom.conf
+|4,39,270,0,1611750240,"~/.config/picom/picom.conf"
+-'  270  0  ~/.config/picom/picom.conf
+|4,39,270,0,1611750240,"~/.config/picom/picom.conf"
+-'  1  0  ~/.config/picom/picom.conf
+|4,39,1,0,1611750083,"~/.config/picom/picom.conf"
+-'  1  0  ~/.config/picom/picom.conf
+|4,39,1,0,1611750083,"~/.config/picom/picom.conf"
+-'  1  0  ~/.config/picom/picom.conf
+|4,39,1,0,1611750083,"~/.config/picom/picom.conf"
+-'  1  0  ~/.config/picom/picom.conf
+|4,39,1,0,1611750083,"~/.config/picom/picom.conf"
+-'  1  0  ~/.config/picom/picom.conf
+|4,39,1,0,1611750083,"~/.config/picom/picom.conf"
+-'  1  0  ~/.config/picom/picom.conf
+|4,39,1,0,1611750083,"~/.config/picom/picom.conf"
+-'  1  0  ~/.config/picom/picom.conf
+|4,39,1,0,1611750083,"~/.config/picom/picom.conf"
+-'  1  0  ~/.config/picom/picom.conf
+|4,39,1,0,1611750083,"~/.config/picom/picom.conf"
 -'  1  0  ~/.config/picom/picom.conf
 |4,39,1,0,1611750083,"~/.config/picom/picom.conf"
 -'  1  0  ~/.config/picom/picom.conf
@@ -141,6 +189,38 @@
 |4,39,398,5,1611749697,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
 -'  398  5  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
 |4,39,398,5,1611749697,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
+-'  398  5  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
+|4,39,398,5,1611749697,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
+-'  398  5  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
+|4,39,398,5,1611749697,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
+-'  398  5  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
+|4,39,398,5,1611749697,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
+-'  398  5  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
+|4,39,398,5,1611749697,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
+-'  398  5  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
+|4,39,398,5,1611749697,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
+-'  398  5  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
+|4,39,398,5,1611749697,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
+-'  398  5  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
+|4,39,398,5,1611749697,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
+-'  398  5  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
+|4,39,398,5,1611749697,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
+-'  398  5  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
+|4,39,398,5,1611749697,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
+-'  398  5  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
+|4,39,398,5,1611749697,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
+-'  398  5  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
+|4,39,398,5,1611749697,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
+-'  398  5  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
+|4,39,398,5,1611749697,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
+-'  398  5  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
+|4,39,398,5,1611749697,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
+-'  398  5  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
+|4,39,398,5,1611749697,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
+-'  398  5  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
+|4,39,398,5,1611749697,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
+-'  398  5  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
+|4,39,398,5,1611749697,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
 -'  294  8  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
 |4,39,294,8,1611749332,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
 -'  294  8  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
@@ -173,98 +253,22 @@
 |4,39,294,8,1611749332,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
 -'  294  8  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
 |4,39,294,8,1611749332,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  232  0  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,232,0,1611748294,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  232  0  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,232,0,1611748294,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  232  0  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,232,0,1611748294,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  232  0  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,232,0,1611748294,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  232  0  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,232,0,1611748294,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  232  0  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,232,0,1611748294,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  232  0  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,232,0,1611748294,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  232  0  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,232,0,1611748294,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  232  0  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,232,0,1611748294,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  232  0  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,232,0,1611748294,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  232  0  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,232,0,1611748294,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  232  0  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,232,0,1611748294,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  232  0  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,232,0,1611748294,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  232  0  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,232,0,1611748294,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  232  0  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,232,0,1611748294,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  232  0  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,232,0,1611748294,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  13  22  ~/.config/polybar/scripts/check-all-updates.sh
-|4,39,13,22,1611747693,"~/.config/polybar/scripts/check-all-updates.sh"
--'  13  22  ~/.config/polybar/scripts/check-all-updates.sh
-|4,39,13,22,1611747693,"~/.config/polybar/scripts/check-all-updates.sh"
--'  13  22  ~/.config/polybar/scripts/check-all-updates.sh
-|4,39,13,22,1611747693,"~/.config/polybar/scripts/check-all-updates.sh"
--'  13  22  ~/.config/polybar/scripts/check-all-updates.sh
-|4,39,13,22,1611747693,"~/.config/polybar/scripts/check-all-updates.sh"
--'  13  22  ~/.config/polybar/scripts/check-all-updates.sh
-|4,39,13,22,1611747693,"~/.config/polybar/scripts/check-all-updates.sh"
--'  13  22  ~/.config/polybar/scripts/check-all-updates.sh
-|4,39,13,22,1611747693,"~/.config/polybar/scripts/check-all-updates.sh"
--'  13  22  ~/.config/polybar/scripts/check-all-updates.sh
-|4,39,13,22,1611747693,"~/.config/polybar/scripts/check-all-updates.sh"
--'  13  22  ~/.config/polybar/scripts/check-all-updates.sh
-|4,39,13,22,1611747693,"~/.config/polybar/scripts/check-all-updates.sh"
--'  13  22  ~/.config/polybar/scripts/check-all-updates.sh
-|4,39,13,22,1611747693,"~/.config/polybar/scripts/check-all-updates.sh"
--'  13  22  ~/.config/polybar/scripts/check-all-updates.sh
-|4,39,13,22,1611747693,"~/.config/polybar/scripts/check-all-updates.sh"
--'  13  22  ~/.config/polybar/scripts/check-all-updates.sh
-|4,39,13,22,1611747693,"~/.config/polybar/scripts/check-all-updates.sh"
--'  13  22  ~/.config/polybar/scripts/check-all-updates.sh
-|4,39,13,22,1611747693,"~/.config/polybar/scripts/check-all-updates.sh"
--'  13  22  ~/.config/polybar/scripts/check-all-updates.sh
-|4,39,13,22,1611747693,"~/.config/polybar/scripts/check-all-updates.sh"
--'  13  22  ~/.config/polybar/scripts/check-all-updates.sh
-|4,39,13,22,1611747693,"~/.config/polybar/scripts/check-all-updates.sh"
--'  13  22  ~/.config/polybar/scripts/check-all-updates.sh
-|4,39,13,22,1611747693,"~/.config/polybar/scripts/check-all-updates.sh"
--'  13  22  ~/.config/polybar/scripts/check-all-updates.sh
-|4,39,13,22,1611747693,"~/.config/polybar/scripts/check-all-updates.sh"
--'  1  0  ~/.config/polybar/scripts/check-all-updates.sh
-|4,39,1,0,1611747681,"~/.config/polybar/scripts/check-all-updates.sh"
--'  1  0  ~/.config/polybar/scripts/check-all-updates.sh
-|4,39,1,0,1611747681,"~/.config/polybar/scripts/check-all-updates.sh"
--'  1  0  ~/.config/polybar/scripts/check-all-updates.sh
-|4,39,1,0,1611747681,"~/.config/polybar/scripts/check-all-updates.sh"
--'  1  0  ~/.config/polybar/scripts/check-all-updates.sh
-|4,39,1,0,1611747681,"~/.config/polybar/scripts/check-all-updates.sh"
--'  1  0  ~/.config/polybar/scripts/check-all-updates.sh
-|4,39,1,0,1611747681,"~/.config/polybar/scripts/check-all-updates.sh"
--'  1  0  ~/.config/polybar/scripts/check-all-updates.sh
-|4,39,1,0,1611747681,"~/.config/polybar/scripts/check-all-updates.sh"
--'  1  0  ~/.config/polybar/scripts/check-all-updates.sh
-|4,39,1,0,1611747681,"~/.config/polybar/scripts/check-all-updates.sh"
--'  1  0  ~/.config/polybar/scripts/check-all-updates.sh
-|4,39,1,0,1611747681,"~/.config/polybar/scripts/check-all-updates.sh"
--'  1  0  ~/.config/polybar/scripts/check-all-updates.sh
-|4,39,1,0,1611747681,"~/.config/polybar/scripts/check-all-updates.sh"
--'  1  0  ~/.config/polybar/scripts/check-all-updates.sh
-|4,39,1,0,1611747681,"~/.config/polybar/scripts/check-all-updates.sh"
--'  1  0  ~/.config/polybar/scripts/check-all-updates.sh
-|4,39,1,0,1611747681,"~/.config/polybar/scripts/check-all-updates.sh"
--'  1  0  ~/.config/polybar/scripts/check-all-updates.sh
-|4,39,1,0,1611747681,"~/.config/polybar/scripts/check-all-updates.sh"
--'  1  0  ~/.config/polybar/scripts/check-all-updates.sh
-|4,39,1,0,1611747681,"~/.config/polybar/scripts/check-all-updates.sh"
+-'  294  8  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
+|4,39,294,8,1611749332,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
+-'  294  8  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
+|4,39,294,8,1611749332,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
+-'  294  8  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
+|4,39,294,8,1611749332,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
+-'  294  8  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
+|4,39,294,8,1611749332,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
+-'  294  8  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
+|4,39,294,8,1611749332,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
 
 # History of marks within files (newest to oldest):
+
+> ~/Git/local/local1/.git/MERGE_MSG
+	*	1612413905	0
+	"	1	0
 
 > ~/.zshrc
 	*	1611751662	0

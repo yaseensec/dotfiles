@@ -62,17 +62,10 @@ alias lt='exa -aTg --color=always --group-directories-first' # tree listing
 
 unset LESS;
 export TERM=xterm-256color
-export GIT_EDITOR=vim
+export GIT_EDITOR=nvim
 
 #fnm
 #eval "$(fnm env)"
-
-# Dynamic window title with zsh shell.(old)
-#case $TERM in
-#    xterm*)
-#        precmd () {print -Pn "\e]0;%2~:$(/home/im/References/zshname.sh)\a"}
-#        ;;
-#esac
 
 # Dynamic window title with zsh shell.
 # Shows current directory and running (multi-line) command.

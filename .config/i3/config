@@ -366,11 +366,11 @@ bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
 
 ##########################################################
-    ## Adjusting Screen Brightness with Brightlight ##
+    ## Adjusting Screen Brightness with Xbacklight ##
 ##########################################################
 
-bindsym XF86MonBrightnessUp exec --no-startup-id brightlight -i 100 #increase screen brightness
-bindsym XF86MonBrightnessDown exec --no-startup-id brightlight -d 100 #decrease screen brightness
+bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 10 #increase screen brightness
+bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 10 #decrease screen brightness
 
 
 ###################################
@@ -386,7 +386,7 @@ bindsym $mod+Print exec --no-startup-id $HOME/Pictures/Screenshots/region.sh
 
 exec_always --no-startup-id xset s off
 exec_always --no-startup-id xset dpms 0 0 0
-exec_always --no-startup-id xset +fp /home/im/.local/share/fonts
+exec_always --no-startup-id xset +fp ~/.local/share/fonts
 exec_always --no-startup-id xset fp rehash
 exec_always --no-startup-id xset -b
 
@@ -397,6 +397,7 @@ exec_always --no-startup-id xset -b
 exec_always --no-startup-id pulseeffects --gapplication-service
 exec --no-startup-id nm-applet
 exec --no-startup-id dunst
+exec --no-startup-id blueman-applet
 
 #####################
     ## Polybar ##
@@ -416,7 +417,7 @@ bindsym $mod+Shift+x exec --no-startup-id betterlockscreen --text "I'm DarkRose"
 
 #bindsym $mod+m exec --no-startup-id i3-msg workspace 1 && alacritty --class=mpd -e mpd
 #bindsym $mod+x exec --no-startup-id i3-msg workspace 1 && alacritty --class=mpd -e mpd --kill
-bindsym $mod+m exec --no-startup-id alacritty -e mpd
+bindsym $mod+m exec --no-startup-id alacritty -e mpd && mpDris2
 bindsym $mod+x exec --no-startup-id alacritty -e mpd --kill
 bindsym $mod+o exec --no-startup-id mpc toggle
 bindsym $mod+n exec --no-startup-id mpc next
