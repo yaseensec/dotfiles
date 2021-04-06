@@ -14,14 +14,20 @@
 ~MSle0~/feh
 
 # Command Line History (newest to oldest):
+:qa
+|2,0,1615953244,,"qa"
 :q
-|2,0,1612413923,,"q"
+|2,0,1615953216,,"q"
+:wq
+|2,0,1615879430,,"wq"
+:PlugUpdate
+|2,0,1615879163,,"PlugUpdate"
+:q!
+|2,0,1615878752,,"q!"
+:PlugInstall
+|2,0,1615878697,,"PlugInstall"
 :w
 |2,0,1611750903,,"w"
-:wq
-|2,0,1611747693,,"wq"
-:q!
-|2,0,1611740434,,"q!"
 
 # Search String History (newest to oldest):
 ?/feh
@@ -41,237 +47,294 @@
 |3,1,0,1,1,0,1611749349,"   >>pacman -S alsa alsa-utils alsa-plugins alsa-lib pulseaudio pulseaudio-alsa pulseaudio-bluetooth pulseaudio-equalizer pavucontrol"
 
 # File marks:
-'0  1  0  ~/Git/local/local1/.git/MERGE_MSG
-|4,48,1,0,1612413923,"~/Git/local/local1/.git/MERGE_MSG"
-'1  1  0  ~/.zshrc
-|4,49,1,0,1611751663,"~/.zshrc"
-'2  429  44  ~/.config/i3/config
-|4,50,429,44,1611750950,"~/.config/i3/config"
-'3  1  0  ~/.config/i3/config
-|4,51,1,0,1611750258,"~/.config/i3/config"
-'4  1  0  ~/.config/i3/config
-|4,52,1,0,1611750258,"~/.config/i3/config"
-'5  270  0  ~/.config/picom/picom.conf
-|4,53,270,0,1611750240,"~/.config/picom/picom.conf"
-'6  398  5  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,54,398,5,1611749697,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
-'7  294  8  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,55,294,8,1611748414,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
-'8  232  0  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,56,232,0,1611747715,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
-'9  13  22  ~/.config/polybar/scripts/check-all-updates.sh
-|4,57,13,22,1611747693,"~/.config/polybar/scripts/check-all-updates.sh"
+'0  1  0  ~/Documents/test/dir2/3
+|4,48,1,0,1615953244,"~/Documents/test/dir2/3"
+'1  1  0  ~/Documents/test/dir2/4
+|4,49,1,0,1615953216,"~/Documents/test/dir2/4"
+'2  1  0  ~/Documents/test/dir2/4
+|4,50,1,0,1615953216,"~/Documents/test/dir2/4"
+'3  1  0  ~/Documents/test/dir2/5
+|4,51,1,0,1615953207,"~/Documents/test/dir2/5"
+'4  42  0  ~/.zshrc
+|4,52,42,0,1615879430,"~/.zshrc"
+'5  479  2  ~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
+|4,53,479,2,1615879215,"~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
+'6  1  0  ~/.vim/NERD_tree_1
+|4,54,1,0,1615879147,"~/.vim/NERD_tree_1"
+'7  193  9  ~/References/Arch-I3-Setup/i3-guide
+|4,55,193,9,1615879035,"~/References/Arch-I3-Setup/i3-guide"
+'8  1  0  ~/.vimrc
+|4,56,1,0,1615878953,"~/.vimrc"
+'9  6  0  ~/.vim/NERD_tree_1
+|4,57,6,0,1615878868,"~/.vim/NERD_tree_1"
 
 # Jumplist (newest first):
--'  1  0  ~/Git/local/local1/.git/MERGE_MSG
-|4,39,1,0,1612413923,"~/Git/local/local1/.git/MERGE_MSG"
+-'  1  0  ~/Documents/test/dir2/3
+|4,39,1,0,1615953244,"~/Documents/test/dir2/3"
+-'  1  0  ~/Documents/test/dir2/4
+|4,39,1,0,1615953216,"~/Documents/test/dir2/4"
+-'  1  0  ~/Documents/test/dir2/4
+|4,39,1,0,1615953216,"~/Documents/test/dir2/4"
+-'  1  0  ~/Documents/test/dir2/5
+|4,39,1,0,1615953207,"~/Documents/test/dir2/5"
+-'  1  0  ~/Documents/test/dir2/5
+|4,39,1,0,1615953207,"~/Documents/test/dir2/5"
+-'  1  0  ~/Documents/test/dir2/5
+|4,39,1,0,1615953207,"~/Documents/test/dir2/5"
+-'  1  0  ~/Documents/test/dir2/5
+|4,39,1,0,1615953207,"~/Documents/test/dir2/5"
+-'  42  0  ~/.zshrc
+|4,39,42,0,1615879430,"~/.zshrc"
+-'  42  0  ~/.zshrc
+|4,39,42,0,1615879430,"~/.zshrc"
+-'  42  0  ~/.zshrc
+|4,39,42,0,1615879430,"~/.zshrc"
+-'  42  0  ~/.zshrc
+|4,39,42,0,1615879430,"~/.zshrc"
+-'  42  0  ~/.zshrc
+|4,39,42,0,1615879430,"~/.zshrc"
+-'  42  0  ~/.zshrc
+|4,39,42,0,1615879430,"~/.zshrc"
+-'  42  0  ~/.zshrc
+|4,39,42,0,1615879430,"~/.zshrc"
+-'  42  0  ~/.zshrc
+|4,39,42,0,1615879430,"~/.zshrc"
 -'  1  0  ~/.zshrc
-|4,39,1,0,1611751663,"~/.zshrc"
+|4,39,1,0,1615879423,"~/.zshrc"
 -'  1  0  ~/.zshrc
-|4,39,1,0,1611751663,"~/.zshrc"
--'  429  44  ~/.config/i3/config
-|4,39,429,44,1611750950,"~/.config/i3/config"
--'  429  44  ~/.config/i3/config
-|4,39,429,44,1611750950,"~/.config/i3/config"
--'  429  44  ~/.config/i3/config
-|4,39,429,44,1611750950,"~/.config/i3/config"
--'  429  44  ~/.config/i3/config
-|4,39,429,44,1611750950,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1611750889,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1611750889,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1611750889,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1611750889,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1611750258,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1611750258,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1611750258,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1611750258,"~/.config/i3/config"
--'  270  0  ~/.config/picom/picom.conf
-|4,39,270,0,1611750240,"~/.config/picom/picom.conf"
--'  270  0  ~/.config/picom/picom.conf
-|4,39,270,0,1611750240,"~/.config/picom/picom.conf"
--'  270  0  ~/.config/picom/picom.conf
-|4,39,270,0,1611750240,"~/.config/picom/picom.conf"
--'  270  0  ~/.config/picom/picom.conf
-|4,39,270,0,1611750240,"~/.config/picom/picom.conf"
--'  270  0  ~/.config/picom/picom.conf
-|4,39,270,0,1611750240,"~/.config/picom/picom.conf"
--'  270  0  ~/.config/picom/picom.conf
-|4,39,270,0,1611750240,"~/.config/picom/picom.conf"
--'  270  0  ~/.config/picom/picom.conf
-|4,39,270,0,1611750240,"~/.config/picom/picom.conf"
--'  270  0  ~/.config/picom/picom.conf
-|4,39,270,0,1611750240,"~/.config/picom/picom.conf"
--'  270  0  ~/.config/picom/picom.conf
-|4,39,270,0,1611750240,"~/.config/picom/picom.conf"
--'  270  0  ~/.config/picom/picom.conf
-|4,39,270,0,1611750240,"~/.config/picom/picom.conf"
--'  270  0  ~/.config/picom/picom.conf
-|4,39,270,0,1611750240,"~/.config/picom/picom.conf"
--'  270  0  ~/.config/picom/picom.conf
-|4,39,270,0,1611750240,"~/.config/picom/picom.conf"
--'  270  0  ~/.config/picom/picom.conf
-|4,39,270,0,1611750240,"~/.config/picom/picom.conf"
--'  270  0  ~/.config/picom/picom.conf
-|4,39,270,0,1611750240,"~/.config/picom/picom.conf"
--'  270  0  ~/.config/picom/picom.conf
-|4,39,270,0,1611750240,"~/.config/picom/picom.conf"
--'  270  0  ~/.config/picom/picom.conf
-|4,39,270,0,1611750240,"~/.config/picom/picom.conf"
--'  1  0  ~/.config/picom/picom.conf
-|4,39,1,0,1611750083,"~/.config/picom/picom.conf"
--'  1  0  ~/.config/picom/picom.conf
-|4,39,1,0,1611750083,"~/.config/picom/picom.conf"
--'  1  0  ~/.config/picom/picom.conf
-|4,39,1,0,1611750083,"~/.config/picom/picom.conf"
--'  1  0  ~/.config/picom/picom.conf
-|4,39,1,0,1611750083,"~/.config/picom/picom.conf"
--'  1  0  ~/.config/picom/picom.conf
-|4,39,1,0,1611750083,"~/.config/picom/picom.conf"
--'  1  0  ~/.config/picom/picom.conf
-|4,39,1,0,1611750083,"~/.config/picom/picom.conf"
--'  1  0  ~/.config/picom/picom.conf
-|4,39,1,0,1611750083,"~/.config/picom/picom.conf"
--'  1  0  ~/.config/picom/picom.conf
-|4,39,1,0,1611750083,"~/.config/picom/picom.conf"
--'  1  0  ~/.config/picom/picom.conf
-|4,39,1,0,1611750083,"~/.config/picom/picom.conf"
--'  1  0  ~/.config/picom/picom.conf
-|4,39,1,0,1611750083,"~/.config/picom/picom.conf"
--'  1  0  ~/.config/picom/picom.conf
-|4,39,1,0,1611750083,"~/.config/picom/picom.conf"
--'  1  0  ~/.config/picom/picom.conf
-|4,39,1,0,1611750083,"~/.config/picom/picom.conf"
--'  1  0  ~/.config/picom/picom.conf
-|4,39,1,0,1611750083,"~/.config/picom/picom.conf"
--'  1  0  ~/.config/picom/picom.conf
-|4,39,1,0,1611750083,"~/.config/picom/picom.conf"
--'  1  0  ~/.config/picom/picom.conf
-|4,39,1,0,1611750083,"~/.config/picom/picom.conf"
--'  1  0  ~/.config/picom/picom.conf
-|4,39,1,0,1611750083,"~/.config/picom/picom.conf"
--'  398  5  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,398,5,1611749697,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  398  5  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,398,5,1611749697,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  398  5  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,398,5,1611749697,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  398  5  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,398,5,1611749697,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  398  5  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,398,5,1611749697,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  398  5  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,398,5,1611749697,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  398  5  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,398,5,1611749697,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  398  5  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,398,5,1611749697,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  398  5  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,398,5,1611749697,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  398  5  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,398,5,1611749697,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  398  5  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,398,5,1611749697,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  398  5  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,398,5,1611749697,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  398  5  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,398,5,1611749697,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  398  5  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,398,5,1611749697,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  398  5  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,398,5,1611749697,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  398  5  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,398,5,1611749697,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  398  5  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,398,5,1611749697,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  398  5  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,398,5,1611749697,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  398  5  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,398,5,1611749697,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  398  5  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,398,5,1611749697,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  398  5  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,398,5,1611749697,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  398  5  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,398,5,1611749697,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  398  5  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,398,5,1611749697,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  398  5  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,398,5,1611749697,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  398  5  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,398,5,1611749697,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  398  5  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,398,5,1611749697,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  398  5  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,398,5,1611749697,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  398  5  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,398,5,1611749697,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  398  5  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,398,5,1611749697,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  398  5  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,398,5,1611749697,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  398  5  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,398,5,1611749697,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  398  5  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,398,5,1611749697,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  294  8  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,294,8,1611749332,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  294  8  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,294,8,1611749332,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  294  8  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,294,8,1611749332,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  294  8  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,294,8,1611749332,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  294  8  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,294,8,1611749332,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  294  8  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,294,8,1611749332,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  294  8  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,294,8,1611749332,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  294  8  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,294,8,1611749332,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  294  8  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,294,8,1611749332,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  294  8  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,294,8,1611749332,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  294  8  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,294,8,1611749332,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  294  8  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,294,8,1611749332,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  294  8  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,294,8,1611749332,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  294  8  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,294,8,1611749332,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  294  8  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,294,8,1611749332,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  294  8  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,294,8,1611749332,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  294  8  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,294,8,1611749332,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  294  8  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,294,8,1611749332,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  294  8  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,294,8,1611749332,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  294  8  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,294,8,1611749332,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  294  8  ~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,294,8,1611749332,"~/dotfiles/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
+|4,39,1,0,1615879423,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1615879423,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1615879423,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1615879423,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1615879423,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1615879423,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1615879423,"~/.zshrc"
+-'  479  2  ~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
+|4,39,479,2,1615879215,"~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
+-'  479  2  ~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
+|4,39,479,2,1615879215,"~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
+-'  479  2  ~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
+|4,39,479,2,1615879215,"~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
+-'  479  2  ~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
+|4,39,479,2,1615879215,"~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
+-'  479  2  ~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
+|4,39,479,2,1615879215,"~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
+-'  479  2  ~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
+|4,39,479,2,1615879215,"~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
+-'  479  2  ~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
+|4,39,479,2,1615879215,"~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
+-'  479  2  ~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
+|4,39,479,2,1615879215,"~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
+-'  479  2  ~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
+|4,39,479,2,1615879215,"~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
+-'  479  2  ~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
+|4,39,479,2,1615879215,"~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
+-'  479  2  ~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
+|4,39,479,2,1615879215,"~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
+-'  479  2  ~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
+|4,39,479,2,1615879215,"~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
+-'  479  2  ~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
+|4,39,479,2,1615879215,"~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
+-'  479  2  ~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
+|4,39,479,2,1615879215,"~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
+-'  479  2  ~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
+|4,39,479,2,1615879215,"~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
+-'  479  2  ~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
+|4,39,479,2,1615879215,"~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
+-'  1  0  ~/.vim/NERD_tree_1
+|4,39,1,0,1615879147,"~/.vim/NERD_tree_1"
+-'  1  0  ~/.vim/NERD_tree_1
+|4,39,1,0,1615879147,"~/.vim/NERD_tree_1"
+-'  1  0  ~/.vim/NERD_tree_1
+|4,39,1,0,1615879147,"~/.vim/NERD_tree_1"
+-'  1  0  ~/.vim/NERD_tree_1
+|4,39,1,0,1615879147,"~/.vim/NERD_tree_1"
+-'  1  0  ~/.vim/NERD_tree_1
+|4,39,1,0,1615879147,"~/.vim/NERD_tree_1"
+-'  1  0  ~/.vim/NERD_tree_1
+|4,39,1,0,1615879147,"~/.vim/NERD_tree_1"
+-'  1  0  ~/.vim/NERD_tree_1
+|4,39,1,0,1615879147,"~/.vim/NERD_tree_1"
+-'  1  0  ~/.vim/NERD_tree_1
+|4,39,1,0,1615879147,"~/.vim/NERD_tree_1"
+-'  1  0  ~/.vim/NERD_tree_1
+|4,39,1,0,1615879147,"~/.vim/NERD_tree_1"
+-'  1  0  ~/.vim/NERD_tree_1
+|4,39,1,0,1615879147,"~/.vim/NERD_tree_1"
+-'  1  0  ~/.vim/NERD_tree_1
+|4,39,1,0,1615879147,"~/.vim/NERD_tree_1"
+-'  1  0  ~/.vim/NERD_tree_1
+|4,39,1,0,1615879147,"~/.vim/NERD_tree_1"
+-'  1  0  ~/.vim/NERD_tree_1
+|4,39,1,0,1615879147,"~/.vim/NERD_tree_1"
+-'  1  0  ~/.vim/NERD_tree_1
+|4,39,1,0,1615879147,"~/.vim/NERD_tree_1"
+-'  1  0  ~/.vim/NERD_tree_1
+|4,39,1,0,1615879147,"~/.vim/NERD_tree_1"
+-'  1  0  ~/.vim/NERD_tree_1
+|4,39,1,0,1615879147,"~/.vim/NERD_tree_1"
+-'  1  0  ~/.vim/NERD_tree_1
+|4,39,1,0,1615879147,"~/.vim/NERD_tree_1"
+-'  1  0  ~/.vim/NERD_tree_1
+|4,39,1,0,1615879147,"~/.vim/NERD_tree_1"
+-'  1  0  ~/.vim/NERD_tree_1
+|4,39,1,0,1615879147,"~/.vim/NERD_tree_1"
+-'  1  0  ~/.vim/NERD_tree_1
+|4,39,1,0,1615879147,"~/.vim/NERD_tree_1"
+-'  1  0  ~/.vim/NERD_tree_1
+|4,39,1,0,1615879147,"~/.vim/NERD_tree_1"
+-'  1  0  ~/.vim/NERD_tree_1
+|4,39,1,0,1615879147,"~/.vim/NERD_tree_1"
+-'  1  0  ~/.vim/NERD_tree_1
+|4,39,1,0,1615879147,"~/.vim/NERD_tree_1"
+-'  1  0  ~/.vim/NERD_tree_1
+|4,39,1,0,1615879147,"~/.vim/NERD_tree_1"
+-'  1  0  ~/.vim/NERD_tree_1
+|4,39,1,0,1615879147,"~/.vim/NERD_tree_1"
+-'  1  0  ~/.vim/NERD_tree_1
+|4,39,1,0,1615879147,"~/.vim/NERD_tree_1"
+-'  1  0  ~/.vim/NERD_tree_1
+|4,39,1,0,1615879147,"~/.vim/NERD_tree_1"
+-'  1  0  ~/.vim/NERD_tree_1
+|4,39,1,0,1615879147,"~/.vim/NERD_tree_1"
+-'  1  0  ~/.vim/NERD_tree_1
+|4,39,1,0,1615879147,"~/.vim/NERD_tree_1"
+-'  1  0  ~/.vim/NERD_tree_1
+|4,39,1,0,1615879147,"~/.vim/NERD_tree_1"
+-'  1  0  ~/.vim/NERD_tree_1
+|4,39,1,0,1615879147,"~/.vim/NERD_tree_1"
+-'  1  0  ~/.vim/NERD_tree_1
+|4,39,1,0,1615879147,"~/.vim/NERD_tree_1"
+-'  18  0  ~/.vim/NERD_tree_1
+|4,39,18,0,1615879142,"~/.vim/NERD_tree_1"
+-'  18  0  ~/.vim/NERD_tree_1
+|4,39,18,0,1615879142,"~/.vim/NERD_tree_1"
+-'  18  0  ~/.vim/NERD_tree_1
+|4,39,18,0,1615879142,"~/.vim/NERD_tree_1"
+-'  18  0  ~/.vim/NERD_tree_1
+|4,39,18,0,1615879142,"~/.vim/NERD_tree_1"
+-'  18  0  ~/.vim/NERD_tree_1
+|4,39,18,0,1615879142,"~/.vim/NERD_tree_1"
+-'  18  0  ~/.vim/NERD_tree_1
+|4,39,18,0,1615879142,"~/.vim/NERD_tree_1"
+-'  18  0  ~/.vim/NERD_tree_1
+|4,39,18,0,1615879142,"~/.vim/NERD_tree_1"
+-'  18  0  ~/.vim/NERD_tree_1
+|4,39,18,0,1615879142,"~/.vim/NERD_tree_1"
+-'  18  0  ~/.vim/NERD_tree_1
+|4,39,18,0,1615879142,"~/.vim/NERD_tree_1"
+-'  18  0  ~/.vim/NERD_tree_1
+|4,39,18,0,1615879142,"~/.vim/NERD_tree_1"
+-'  18  0  ~/.vim/NERD_tree_1
+|4,39,18,0,1615879142,"~/.vim/NERD_tree_1"
+-'  18  0  ~/.vim/NERD_tree_1
+|4,39,18,0,1615879142,"~/.vim/NERD_tree_1"
+-'  18  0  ~/.vim/NERD_tree_1
+|4,39,18,0,1615879142,"~/.vim/NERD_tree_1"
+-'  18  0  ~/.vim/NERD_tree_1
+|4,39,18,0,1615879142,"~/.vim/NERD_tree_1"
+-'  18  0  ~/.vim/NERD_tree_1
+|4,39,18,0,1615879142,"~/.vim/NERD_tree_1"
+-'  18  0  ~/.vim/NERD_tree_1
+|4,39,18,0,1615879142,"~/.vim/NERD_tree_1"
+-'  18  0  ~/.vim/NERD_tree_1
+|4,39,18,0,1615879142,"~/.vim/NERD_tree_1"
+-'  18  0  ~/.vim/NERD_tree_1
+|4,39,18,0,1615879142,"~/.vim/NERD_tree_1"
+-'  18  0  ~/.vim/NERD_tree_1
+|4,39,18,0,1615879142,"~/.vim/NERD_tree_1"
+-'  18  0  ~/.vim/NERD_tree_1
+|4,39,18,0,1615879142,"~/.vim/NERD_tree_1"
+-'  18  0  ~/.vim/NERD_tree_1
+|4,39,18,0,1615879142,"~/.vim/NERD_tree_1"
+-'  18  0  ~/.vim/NERD_tree_1
+|4,39,18,0,1615879142,"~/.vim/NERD_tree_1"
+-'  18  0  ~/.vim/NERD_tree_1
+|4,39,18,0,1615879142,"~/.vim/NERD_tree_1"
+-'  18  0  ~/.vim/NERD_tree_1
+|4,39,18,0,1615879142,"~/.vim/NERD_tree_1"
+-'  18  0  ~/.vim/NERD_tree_1
+|4,39,18,0,1615879142,"~/.vim/NERD_tree_1"
+-'  18  0  ~/.vim/NERD_tree_1
+|4,39,18,0,1615879142,"~/.vim/NERD_tree_1"
+-'  18  0  ~/.vim/NERD_tree_1
+|4,39,18,0,1615879142,"~/.vim/NERD_tree_1"
+-'  18  0  ~/.vim/NERD_tree_1
+|4,39,18,0,1615879142,"~/.vim/NERD_tree_1"
+-'  18  0  ~/.vim/NERD_tree_1
+|4,39,18,0,1615879142,"~/.vim/NERD_tree_1"
 
 # History of marks within files (newest to oldest):
 
-> ~/Git/local/local1/.git/MERGE_MSG
-	*	1612413905	0
+> ~/Documents/test/dir2/3
+	*	1615953239	0
+	"	1	0
+
+> ~/Documents/test/dir2/4
+	*	1615953236	0
+	"	1	0
+
+> ~/Documents/test/dir2/5
+	*	1615953206	0
+	"	1	0
+
+> ~/Documents/test/dir2/1
+	*	1615953203	0
 	"	1	0
 
 > ~/.zshrc
-	*	1611751662	0
+	*	1615879429	0
+	"	42	0
+	^	42	0
+	.	42	0
+	+	42	0
+
+> ~/.vim/NERD_tree_1
+	*	1615879145	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
+	*	1615879057	0
+	"	479	2
+
+> ~/References/Arch-I3-Setup/i3-guide
+	*	1615879034	0
+	"	193	9
+
+> ~/.vimrc
+	*	1615878943	0
+	"	1	0
+	^	170	0
+	.	170	0
+	+	180	0
+	+	170	0
+
+> ~/.config/ranger/rifle.conf
+	*	1615641078	0
+	"	88	0
+
+> ~/Downloads/dotfiles/References/lvmonluks/mkinitcpio.conf
+	*	1614758487	0
+	"	1	0
+
+> ~/Documents/scripts/test.py
+	*	1614239488	0
+	"	1	0
+
+> ~/Documents/scripts/test.sh
+	*	1614236946	0
+	"	1	0
+
+> ~/Git/local/local1/.git/MERGE_MSG
+	*	1612413905	0
 	"	1	0
 
 > ~/.config/i3/config

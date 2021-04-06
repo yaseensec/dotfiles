@@ -40,15 +40,15 @@
 #$mod+shift+d    move a container to output down
 #$mod+shift+e    $mode_system(logout,reboot,etc)
 #$mod+shift+f    ranger
-#$mod+shift+g
+#$mod+shift+g    $mode_gaps
 #$mod+shift+h
 #$mod+shift+i
 #$mod+shift+j    move focused window left
 #$mod+shift+k    move focused window down
 #$mod+shift+l    move focused window up
-#$mod+shift+m
-#$mod+shift+n
-#$mod+shift+o
+#$mod+shift+m    Config Menu
+#$mod+shift+n    Border radius Normal
+#$mod+shift+o    Browser BookMarks
 #$mod+shift+p
 #$mod+shift+q    kill focused windoe
 #$mod+shift+r    restart i3
@@ -447,6 +447,9 @@ bindsym $mod+z exec --no-startup-id i3-msg workspace 3 && alacritty --class=ncmp
 ######################################################
 
 bindsym $mod+shift+b exec --no-startup-id firefox --private-window
+bindsym $mod+shift+f exec --no-startup-id alacritty -e ranger
+bindsym $mod+shift+m exec --no-startup-id bookmenu -p "Select a config" -b ~/.config/bookmenu/configs -co "$TERMINAL -e nvim"
+bindsym $mod+shift+o exec --no-startup-id bookmenu -p "Select a config" -b ~/.config/bookmenu/bookmarks -co $BROWSER
 
 ######################################################
     ## Open applications on specific workspaces ##
@@ -462,7 +465,7 @@ assign [class="Virt-manager"] $ws6
     ## Misc & Unused ##
 ###########################
 
-#bindsym $mod+shift+f exec --no-startup-id i3-msg workspace 1 && urxvt --class=ranger -e ranger
+#bindsym $mod+shift+f exec --no-startup-id i3-msg workspace 1 && alacritty --class=ranger -e ranger
 #bindsym $mod+shift+v exec --no-startup-id i3-msg workspace 1 && alacritty --class=cava -e cava
 #bindsym $mod+shift+z exec --no-startup-id $HOME/Downloads/i3-layout-manager/./layout_manager.sh
 #exec_always --no-startup-id wal -R

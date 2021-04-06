@@ -26,12 +26,12 @@ _comp_options+=(globdots)		# Include hidden files.
 # End of lines added by compinstall
 
 #Auto Complete With Case Sensitivity
-zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=x'
-zmodload zsh/complist
+zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
 
 # Load zsh-syntax-highlighting; should be last.
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
-
+# Suggest aliases for commands
+source /usr/share/zsh/plugins/zsh-you-should-use/you-should-use.plugin.zsh 2>/dev/null
 #Prompt
 source ~/agnoster.zsh-theme
 setopt prompt_subst
@@ -40,6 +40,7 @@ setopt prompt_subst
 
 alias vi="nvim"
 alias vim="nvim"
+alias neovim="~/Downloads/nvim-linux64/bin/nvim"
 #alias fdm="/opt/freedownloadmanager/fdm"
 alias iplbd="sudo ip link set br0 down"
 alias iplbu="sudo ip link set br0 up"
@@ -47,6 +48,7 @@ alias dotfiles="/usr/bin/git --git-dir=$HOME/Git/Github/dotfiles/ --work-tree=$H
 alias py="python"
 alias reflector="sudo reflector --latest 50 --protocol http --protocol https --sort rate --save /etc/pacman.d/mirrorlist"
 alias wildfly="/opt/wildfly/bin/standalone.sh"
+alias blue="sudo systemctl start bluetooth.service"
 #alias kite="/home/im/.local/share/kite/kited"
 
 # Changing "ls" to "exa"

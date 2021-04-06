@@ -528,3 +528,32 @@
           ExecStart=
            ExecStart=/usr/bin/anbox container-manager --daemon --privileged --data-path=/var/lib/anbox --use-rootfs-overlay
   >> restart.....
+
+  Autologin with Getty
+
+  >> Create a file /etc/systemd/system/getty@tty1.service.d/override.conf and add following:
+
+    >>[Service]
+      ExecStart=
+      ExecStart=-/usr/bin/agetty --autologin username --noclear %I $TERM
+      Type=simple
+
+ Auto Startx
+
+  >> Add following to .zprofile:
+
+   >>   if [[ "$(tty)" = "/dev/tty1" ]]; then
+            pgrep i3 || exec startx "~/.xinitrc"
+        fi
+
+  >> Hide startx Messages
+     
+      >>     if [[ "$(tty)" = "/dev/tty1" ]]; then
+                pgrep i3 || [[ $(fgconsole 2>/dev/null) == 1 ]] && exec startx "~/.xinitrc" -- vt1 &> /dev/null
+             fi
+
+
+  Auto Start Window Manager
+   >> sudo pacman -S xorg-xinit
+   >> Add exec i3 to bottom of ~/.xinitrc file
+

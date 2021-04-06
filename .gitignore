@@ -3,6 +3,7 @@
 !.config/
 .config/*
 !.config/alacritty
+!.config/bookmenu
 !.config/dunst
 !.config/gtkrc
 !.config/gtkrc-2.0
@@ -12,6 +13,7 @@
 !.config/mpd
 .config/mpd/*
 !.config/mpd/mpd.conf
+!.config/mpv
 !.config/ncmpcpp
 .config/ncmpcpp/*
 !.config/ncmpcpp/config
@@ -19,6 +21,9 @@
 !.config/polybar
 !.config/picom
 !.config/rofi
+!.config/ranger
+!.config/sxhkd
+!.config/zathura
 !.bash_profile
 !.bashrc
 !.dmrc

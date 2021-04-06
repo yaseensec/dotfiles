@@ -1,0 +1,4 @@
+super + shift + {r, s}
+  prompt {"Are you sure you would like to reboot?" "sudo reboot", "Are you sure you would like to shutdown" "sudo shutdown"}
+super + shift + c
+  toggleprogram "picom" "--experimental-backends"
