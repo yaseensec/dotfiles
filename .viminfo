@@ -14,10 +14,10 @@
 ~MSle0~/feh
 
 # Command Line History (newest to oldest):
+:q
+|2,0,1624001134,,"q"
 :qa
 |2,0,1615953244,,"qa"
-:q
-|2,0,1615953216,,"q"
 :wq
 |2,0,1615879430,,"wq"
 :PlugUpdate
@@ -47,34 +47,50 @@
 |3,1,0,1,1,0,1611749349,"   >>pacman -S alsa alsa-utils alsa-plugins alsa-lib pulseaudio pulseaudio-alsa pulseaudio-bluetooth pulseaudio-equalizer pavucontrol"
 
 # File marks:
-'0  1  0  ~/Documents/test/dir2/3
-|4,48,1,0,1615953244,"~/Documents/test/dir2/3"
-'1  1  0  ~/Documents/test/dir2/4
-|4,49,1,0,1615953216,"~/Documents/test/dir2/4"
+'0  21  0  ~/darkerp/Docker-Compose/frappe.conf
+|4,48,21,0,1624001134,"~/darkerp/Docker-Compose/frappe.conf"
+'1  1  0  ~/Documents/test/dir2/3
+|4,49,1,0,1615953244,"~/Documents/test/dir2/3"
 '2  1  0  ~/Documents/test/dir2/4
 |4,50,1,0,1615953216,"~/Documents/test/dir2/4"
-'3  1  0  ~/Documents/test/dir2/5
-|4,51,1,0,1615953207,"~/Documents/test/dir2/5"
-'4  42  0  ~/.zshrc
-|4,52,42,0,1615879430,"~/.zshrc"
-'5  479  2  ~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,53,479,2,1615879215,"~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
-'6  1  0  ~/.vim/NERD_tree_1
-|4,54,1,0,1615879147,"~/.vim/NERD_tree_1"
-'7  193  9  ~/References/Arch-I3-Setup/i3-guide
-|4,55,193,9,1615879035,"~/References/Arch-I3-Setup/i3-guide"
-'8  1  0  ~/.vimrc
-|4,56,1,0,1615878953,"~/.vimrc"
-'9  6  0  ~/.vim/NERD_tree_1
-|4,57,6,0,1615878868,"~/.vim/NERD_tree_1"
+'3  1  0  ~/Documents/test/dir2/4
+|4,51,1,0,1615953216,"~/Documents/test/dir2/4"
+'4  1  0  ~/Documents/test/dir2/5
+|4,52,1,0,1615953207,"~/Documents/test/dir2/5"
+'5  42  0  ~/.zshrc
+|4,53,42,0,1615879430,"~/.zshrc"
+'6  479  2  ~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
+|4,54,479,2,1615879215,"~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
+'7  1  0  ~/.vim/NERD_tree_1
+|4,55,1,0,1615879147,"~/.vim/NERD_tree_1"
+'8  193  9  ~/References/Arch-I3-Setup/i3-guide
+|4,56,193,9,1615879035,"~/References/Arch-I3-Setup/i3-guide"
+'9  1  0  ~/.vimrc
+|4,57,1,0,1615878953,"~/.vimrc"
 
 # Jumplist (newest first):
+-'  21  0  ~/darkerp/Docker-Compose/frappe.conf
+|4,39,21,0,1624001134,"~/darkerp/Docker-Compose/frappe.conf"
+-'  1  0  ~/Documents/test/dir2/3
+|4,39,1,0,1615953244,"~/Documents/test/dir2/3"
 -'  1  0  ~/Documents/test/dir2/3
 |4,39,1,0,1615953244,"~/Documents/test/dir2/3"
 -'  1  0  ~/Documents/test/dir2/4
 |4,39,1,0,1615953216,"~/Documents/test/dir2/4"
 -'  1  0  ~/Documents/test/dir2/4
 |4,39,1,0,1615953216,"~/Documents/test/dir2/4"
+-'  1  0  ~/Documents/test/dir2/4
+|4,39,1,0,1615953216,"~/Documents/test/dir2/4"
+-'  1  0  ~/Documents/test/dir2/4
+|4,39,1,0,1615953216,"~/Documents/test/dir2/4"
+-'  1  0  ~/Documents/test/dir2/5
+|4,39,1,0,1615953207,"~/Documents/test/dir2/5"
+-'  1  0  ~/Documents/test/dir2/5
+|4,39,1,0,1615953207,"~/Documents/test/dir2/5"
+-'  1  0  ~/Documents/test/dir2/5
+|4,39,1,0,1615953207,"~/Documents/test/dir2/5"
+-'  1  0  ~/Documents/test/dir2/5
+|4,39,1,0,1615953207,"~/Documents/test/dir2/5"
 -'  1  0  ~/Documents/test/dir2/5
 |4,39,1,0,1615953207,"~/Documents/test/dir2/5"
 -'  1  0  ~/Documents/test/dir2/5
@@ -99,6 +115,38 @@
 |4,39,42,0,1615879430,"~/.zshrc"
 -'  42  0  ~/.zshrc
 |4,39,42,0,1615879430,"~/.zshrc"
+-'  42  0  ~/.zshrc
+|4,39,42,0,1615879430,"~/.zshrc"
+-'  42  0  ~/.zshrc
+|4,39,42,0,1615879430,"~/.zshrc"
+-'  42  0  ~/.zshrc
+|4,39,42,0,1615879430,"~/.zshrc"
+-'  42  0  ~/.zshrc
+|4,39,42,0,1615879430,"~/.zshrc"
+-'  42  0  ~/.zshrc
+|4,39,42,0,1615879430,"~/.zshrc"
+-'  42  0  ~/.zshrc
+|4,39,42,0,1615879430,"~/.zshrc"
+-'  42  0  ~/.zshrc
+|4,39,42,0,1615879430,"~/.zshrc"
+-'  42  0  ~/.zshrc
+|4,39,42,0,1615879430,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1615879423,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1615879423,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1615879423,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1615879423,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1615879423,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1615879423,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1615879423,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1615879423,"~/.zshrc"
 -'  1  0  ~/.zshrc
 |4,39,1,0,1615879423,"~/.zshrc"
 -'  1  0  ~/.zshrc
@@ -147,6 +195,38 @@
 |4,39,479,2,1615879215,"~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
 -'  479  2  ~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
 |4,39,479,2,1615879215,"~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
+-'  479  2  ~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
+|4,39,479,2,1615879215,"~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
+-'  479  2  ~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
+|4,39,479,2,1615879215,"~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
+-'  479  2  ~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
+|4,39,479,2,1615879215,"~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
+-'  479  2  ~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
+|4,39,479,2,1615879215,"~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
+-'  479  2  ~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
+|4,39,479,2,1615879215,"~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
+-'  479  2  ~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
+|4,39,479,2,1615879215,"~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
+-'  479  2  ~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
+|4,39,479,2,1615879215,"~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
+-'  479  2  ~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
+|4,39,479,2,1615879215,"~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
+-'  479  2  ~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
+|4,39,479,2,1615879215,"~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
+-'  479  2  ~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
+|4,39,479,2,1615879215,"~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
+-'  479  2  ~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
+|4,39,479,2,1615879215,"~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
+-'  479  2  ~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
+|4,39,479,2,1615879215,"~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
+-'  479  2  ~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
+|4,39,479,2,1615879215,"~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
+-'  479  2  ~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
+|4,39,479,2,1615879215,"~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
+-'  479  2  ~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
+|4,39,479,2,1615879215,"~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
+-'  479  2  ~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
+|4,39,479,2,1615879215,"~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
 -'  1  0  ~/.vim/NERD_tree_1
 |4,39,1,0,1615879147,"~/.vim/NERD_tree_1"
 -'  1  0  ~/.vim/NERD_tree_1
@@ -189,88 +269,16 @@
 |4,39,1,0,1615879147,"~/.vim/NERD_tree_1"
 -'  1  0  ~/.vim/NERD_tree_1
 |4,39,1,0,1615879147,"~/.vim/NERD_tree_1"
--'  1  0  ~/.vim/NERD_tree_1
-|4,39,1,0,1615879147,"~/.vim/NERD_tree_1"
--'  1  0  ~/.vim/NERD_tree_1
-|4,39,1,0,1615879147,"~/.vim/NERD_tree_1"
--'  1  0  ~/.vim/NERD_tree_1
-|4,39,1,0,1615879147,"~/.vim/NERD_tree_1"
--'  1  0  ~/.vim/NERD_tree_1
-|4,39,1,0,1615879147,"~/.vim/NERD_tree_1"
--'  1  0  ~/.vim/NERD_tree_1
-|4,39,1,0,1615879147,"~/.vim/NERD_tree_1"
--'  1  0  ~/.vim/NERD_tree_1
-|4,39,1,0,1615879147,"~/.vim/NERD_tree_1"
--'  1  0  ~/.vim/NERD_tree_1
-|4,39,1,0,1615879147,"~/.vim/NERD_tree_1"
--'  1  0  ~/.vim/NERD_tree_1
-|4,39,1,0,1615879147,"~/.vim/NERD_tree_1"
--'  1  0  ~/.vim/NERD_tree_1
-|4,39,1,0,1615879147,"~/.vim/NERD_tree_1"
--'  1  0  ~/.vim/NERD_tree_1
-|4,39,1,0,1615879147,"~/.vim/NERD_tree_1"
--'  1  0  ~/.vim/NERD_tree_1
-|4,39,1,0,1615879147,"~/.vim/NERD_tree_1"
--'  18  0  ~/.vim/NERD_tree_1
-|4,39,18,0,1615879142,"~/.vim/NERD_tree_1"
--'  18  0  ~/.vim/NERD_tree_1
-|4,39,18,0,1615879142,"~/.vim/NERD_tree_1"
--'  18  0  ~/.vim/NERD_tree_1
-|4,39,18,0,1615879142,"~/.vim/NERD_tree_1"
--'  18  0  ~/.vim/NERD_tree_1
-|4,39,18,0,1615879142,"~/.vim/NERD_tree_1"
--'  18  0  ~/.vim/NERD_tree_1
-|4,39,18,0,1615879142,"~/.vim/NERD_tree_1"
--'  18  0  ~/.vim/NERD_tree_1
-|4,39,18,0,1615879142,"~/.vim/NERD_tree_1"
--'  18  0  ~/.vim/NERD_tree_1
-|4,39,18,0,1615879142,"~/.vim/NERD_tree_1"
--'  18  0  ~/.vim/NERD_tree_1
-|4,39,18,0,1615879142,"~/.vim/NERD_tree_1"
--'  18  0  ~/.vim/NERD_tree_1
-|4,39,18,0,1615879142,"~/.vim/NERD_tree_1"
--'  18  0  ~/.vim/NERD_tree_1
-|4,39,18,0,1615879142,"~/.vim/NERD_tree_1"
--'  18  0  ~/.vim/NERD_tree_1
-|4,39,18,0,1615879142,"~/.vim/NERD_tree_1"
--'  18  0  ~/.vim/NERD_tree_1
-|4,39,18,0,1615879142,"~/.vim/NERD_tree_1"
--'  18  0  ~/.vim/NERD_tree_1
-|4,39,18,0,1615879142,"~/.vim/NERD_tree_1"
--'  18  0  ~/.vim/NERD_tree_1
-|4,39,18,0,1615879142,"~/.vim/NERD_tree_1"
--'  18  0  ~/.vim/NERD_tree_1
-|4,39,18,0,1615879142,"~/.vim/NERD_tree_1"
--'  18  0  ~/.vim/NERD_tree_1
-|4,39,18,0,1615879142,"~/.vim/NERD_tree_1"
--'  18  0  ~/.vim/NERD_tree_1
-|4,39,18,0,1615879142,"~/.vim/NERD_tree_1"
--'  18  0  ~/.vim/NERD_tree_1
-|4,39,18,0,1615879142,"~/.vim/NERD_tree_1"
--'  18  0  ~/.vim/NERD_tree_1
-|4,39,18,0,1615879142,"~/.vim/NERD_tree_1"
--'  18  0  ~/.vim/NERD_tree_1
-|4,39,18,0,1615879142,"~/.vim/NERD_tree_1"
--'  18  0  ~/.vim/NERD_tree_1
-|4,39,18,0,1615879142,"~/.vim/NERD_tree_1"
--'  18  0  ~/.vim/NERD_tree_1
-|4,39,18,0,1615879142,"~/.vim/NERD_tree_1"
--'  18  0  ~/.vim/NERD_tree_1
-|4,39,18,0,1615879142,"~/.vim/NERD_tree_1"
--'  18  0  ~/.vim/NERD_tree_1
-|4,39,18,0,1615879142,"~/.vim/NERD_tree_1"
--'  18  0  ~/.vim/NERD_tree_1
-|4,39,18,0,1615879142,"~/.vim/NERD_tree_1"
--'  18  0  ~/.vim/NERD_tree_1
-|4,39,18,0,1615879142,"~/.vim/NERD_tree_1"
--'  18  0  ~/.vim/NERD_tree_1
-|4,39,18,0,1615879142,"~/.vim/NERD_tree_1"
--'  18  0  ~/.vim/NERD_tree_1
-|4,39,18,0,1615879142,"~/.vim/NERD_tree_1"
--'  18  0  ~/.vim/NERD_tree_1
-|4,39,18,0,1615879142,"~/.vim/NERD_tree_1"
 
 # History of marks within files (newest to oldest):
+
+> ~/darkerp/Docker-Compose/frappe.conf
+	*	1624001130	0
+	"	21	0
+
+> ~/darkerp/nginx.conf
+	*	1624001128	0
+	"	128	17
 
 > ~/Documents/test/dir2/3
 	*	1615953239	0

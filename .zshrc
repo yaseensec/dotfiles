@@ -50,7 +50,14 @@ alias reflector="sudo reflector --latest 50 --protocol http --protocol https --s
 alias wildfly="/opt/wildfly/bin/standalone.sh"
 alias blue="sudo systemctl start bluetooth.service"
 #alias kite="/home/im/.local/share/kite/kited"
-
+alias p="paru -Sc --noconfirm && paru -Syu --noconfirm"
+alias d="sudo du -ach --max-depth=1"
+alias s="sudo swapon /swapfile"
+alias so="sudo swapoff -v /swapfile"
+alias ssh-enigma="ssh yaseen@192.168.122.111"
+alias ssh-entropy="ssh yaseen@192.168.122.228"
+alias ssh-rhel="ssh root@192.168.122.161"
+alias ssh-tx="ssh u0_a214@192.168.0.3 -p 8022"
 # Changing "ls" to "exa"
 alias ls='exa -g --color=always --group-directories-first' # my preferred listing
 alias la='exa -ag --color=always --group-directories-first'  # all files and dirs
@@ -65,6 +72,8 @@ alias lt='exa -aTg --color=always --group-directories-first' # tree listing
 unset LESS;
 export TERM=xterm-256color
 export GIT_EDITOR=nvim
+
+path+=('/home/yaseen/.local/bin/')
 
 #fnm
 #eval "$(fnm env)"

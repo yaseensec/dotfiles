@@ -11,7 +11,7 @@
 #$mod+d          rofi
 #$mod+e          layout toggle split
 #$mod+f          fullscreen toggle
-#$mod+g
+#$mod+g          Dmenu
 #$mod+h          split horizontally
 #$mod+i
 #$mod+j          focus left
@@ -409,7 +409,7 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
     ## Lockscreen with Betterlockscreen ##
 ##############################################
 
-bindsym $mod+Shift+x exec --no-startup-id betterlockscreen --text "I'm DarkRose" --lock dimblur -- --timestr '%I:%M:%p'
+bindsym $mod+Shift+x exec --no-startup-id betterlockscreen --text "This is DarkRose Bitches" --lock dimblur --time-format '%I:%M:%p'
 
 #######################
     ## MPD & MPC ##
@@ -441,6 +441,7 @@ bindsym $mod+d exec --no-startup-id rofi -show drun -show-icons -icon-theme "La 
 bindsym $mod+q exec --no-startup-id virt-manager
 bindsym $mod+t exec --no-startup-id alacritty
 bindsym $mod+z exec --no-startup-id i3-msg workspace 3 && alacritty --class=ncmpcpp -e ncmpcpp
+bindsym $mod+g exec --no-startup-id dmenu_run
 
 ######################################################
     ## Apps Launched with $mod+shift+Alphabets  ##

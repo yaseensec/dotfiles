@@ -19,8 +19,12 @@ Polybar-config:~/.config/polybar/config.ini
 Polybar-modules:~/.config/polybar/modules.ini
 Pcmanfm:~/.config/pcmanfm/default/pcmanfm.conf
 Picom:~/.config/picom/picom.conf
+Projects:~/Downloads/CV's/MY/Projects-Kanagala-Tech
+Questioner:~/Downloads/CV's/MY/questioner
 Rofi:~/.config/rofi/config.rasi
 Shprofile:~/.profile
+surah-ar-rehman:~/Movies/Quran/surah_ar-rehman-meaning
+surahs:~/Movies/Quran/surahs
 Vimrc:~/.vimrc
 Xinitrc:~/.xinitrc
 Xresources:~/.xresources
