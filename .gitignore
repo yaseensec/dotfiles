@@ -31,7 +31,6 @@
 !.gitignore
 !.profile
 !.tmux.conf
-!.viminfo
 !.vimrc
 !.zshenv
 !.zshrc

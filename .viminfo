@@ -14,18 +14,29 @@
 ~MSle0~/feh
 
 # Command Line History (newest to oldest):
+:q!
+|2,0,1631584118,,"q!"
 :q
+<<<<<<< HEAD
 |2,0,1631634335,,"q"
 :PlugInstall
 |2,0,1631634329,,"PlugInstall"
 :q!
 |2,0,1631584118,,"q!"
+=======
+|2,0,1631584116,,"q"
+>>>>>>> 756867843bb94697ece44df157482691a3bf7972
 :qa
 |2,0,1615953244,,"qa"
 :wq
 |2,0,1615879430,,"wq"
 :PlugUpdate
 |2,0,1615879163,,"PlugUpdate"
+<<<<<<< HEAD
+=======
+:PlugInstall
+|2,0,1615878697,,"PlugInstall"
+>>>>>>> 756867843bb94697ece44df157482691a3bf7972
 :w
 |2,0,1611750903,,"w"
 
@@ -73,6 +84,7 @@
 |4,39,21,0,1624001134,"~/darkerp/Docker-Compose/frappe.conf"
 -'  21  0  ~/darkerp/Docker-Compose/frappe.conf
 |4,39,21,0,1624001134,"~/darkerp/Docker-Compose/frappe.conf"
+<<<<<<< HEAD
 -'  21  0  ~/darkerp/Docker-Compose/frappe.conf
 |4,39,21,0,1624001134,"~/darkerp/Docker-Compose/frappe.conf"
 -'  21  0  ~/darkerp/Docker-Compose/frappe.conf
@@ -253,6 +265,8 @@
 |4,39,1,0,1615953244,"~/Documents/test/dir2/3"
 -'  1  0  ~/Documents/test/dir2/3
 |4,39,1,0,1615953244,"~/Documents/test/dir2/3"
+=======
+>>>>>>> 756867843bb94697ece44df157482691a3bf7972
 -'  1  0  ~/Documents/test/dir2/3
 |4,39,1,0,1615953244,"~/Documents/test/dir2/3"
 -'  1  0  ~/Documents/test/dir2/3
@@ -267,6 +281,187 @@
 |4,39,1,0,1615953216,"~/Documents/test/dir2/4"
 -'  1  0  ~/Documents/test/dir2/4
 |4,39,1,0,1615953216,"~/Documents/test/dir2/4"
+<<<<<<< HEAD
+=======
+-'  1  0  ~/Documents/test/dir2/4
+|4,39,1,0,1615953216,"~/Documents/test/dir2/4"
+-'  1  0  ~/Documents/test/dir2/4
+|4,39,1,0,1615953216,"~/Documents/test/dir2/4"
+-'  1  0  ~/Documents/test/dir2/4
+|4,39,1,0,1615953216,"~/Documents/test/dir2/4"
+-'  1  0  ~/Documents/test/dir2/4
+|4,39,1,0,1615953216,"~/Documents/test/dir2/4"
+-'  1  0  ~/Documents/test/dir2/4
+|4,39,1,0,1615953216,"~/Documents/test/dir2/4"
+-'  1  0  ~/Documents/test/dir2/5
+|4,39,1,0,1615953207,"~/Documents/test/dir2/5"
+-'  1  0  ~/Documents/test/dir2/5
+|4,39,1,0,1615953207,"~/Documents/test/dir2/5"
+-'  1  0  ~/Documents/test/dir2/5
+|4,39,1,0,1615953207,"~/Documents/test/dir2/5"
+-'  1  0  ~/Documents/test/dir2/5
+|4,39,1,0,1615953207,"~/Documents/test/dir2/5"
+-'  1  0  ~/Documents/test/dir2/5
+|4,39,1,0,1615953207,"~/Documents/test/dir2/5"
+-'  1  0  ~/Documents/test/dir2/5
+|4,39,1,0,1615953207,"~/Documents/test/dir2/5"
+-'  1  0  ~/Documents/test/dir2/5
+|4,39,1,0,1615953207,"~/Documents/test/dir2/5"
+-'  1  0  ~/Documents/test/dir2/5
+|4,39,1,0,1615953207,"~/Documents/test/dir2/5"
+-'  1  0  ~/Documents/test/dir2/5
+|4,39,1,0,1615953207,"~/Documents/test/dir2/5"
+-'  1  0  ~/Documents/test/dir2/5
+|4,39,1,0,1615953207,"~/Documents/test/dir2/5"
+-'  1  0  ~/Documents/test/dir2/5
+|4,39,1,0,1615953207,"~/Documents/test/dir2/5"
+-'  1  0  ~/Documents/test/dir2/5
+|4,39,1,0,1615953207,"~/Documents/test/dir2/5"
+-'  1  0  ~/Documents/test/dir2/5
+|4,39,1,0,1615953207,"~/Documents/test/dir2/5"
+-'  1  0  ~/Documents/test/dir2/5
+|4,39,1,0,1615953207,"~/Documents/test/dir2/5"
+-'  1  0  ~/Documents/test/dir2/5
+|4,39,1,0,1615953207,"~/Documents/test/dir2/5"
+-'  1  0  ~/Documents/test/dir2/5
+|4,39,1,0,1615953207,"~/Documents/test/dir2/5"
+-'  42  0  ~/.zshrc
+|4,39,42,0,1615879430,"~/.zshrc"
+-'  42  0  ~/.zshrc
+|4,39,42,0,1615879430,"~/.zshrc"
+-'  42  0  ~/.zshrc
+|4,39,42,0,1615879430,"~/.zshrc"
+-'  42  0  ~/.zshrc
+|4,39,42,0,1615879430,"~/.zshrc"
+-'  42  0  ~/.zshrc
+|4,39,42,0,1615879430,"~/.zshrc"
+-'  42  0  ~/.zshrc
+|4,39,42,0,1615879430,"~/.zshrc"
+-'  42  0  ~/.zshrc
+|4,39,42,0,1615879430,"~/.zshrc"
+-'  42  0  ~/.zshrc
+|4,39,42,0,1615879430,"~/.zshrc"
+-'  42  0  ~/.zshrc
+|4,39,42,0,1615879430,"~/.zshrc"
+-'  42  0  ~/.zshrc
+|4,39,42,0,1615879430,"~/.zshrc"
+-'  42  0  ~/.zshrc
+|4,39,42,0,1615879430,"~/.zshrc"
+-'  42  0  ~/.zshrc
+|4,39,42,0,1615879430,"~/.zshrc"
+-'  42  0  ~/.zshrc
+|4,39,42,0,1615879430,"~/.zshrc"
+-'  42  0  ~/.zshrc
+|4,39,42,0,1615879430,"~/.zshrc"
+-'  42  0  ~/.zshrc
+|4,39,42,0,1615879430,"~/.zshrc"
+-'  42  0  ~/.zshrc
+|4,39,42,0,1615879430,"~/.zshrc"
+-'  42  0  ~/.zshrc
+|4,39,42,0,1615879430,"~/.zshrc"
+-'  42  0  ~/.zshrc
+|4,39,42,0,1615879430,"~/.zshrc"
+-'  42  0  ~/.zshrc
+|4,39,42,0,1615879430,"~/.zshrc"
+-'  42  0  ~/.zshrc
+|4,39,42,0,1615879430,"~/.zshrc"
+-'  42  0  ~/.zshrc
+|4,39,42,0,1615879430,"~/.zshrc"
+-'  42  0  ~/.zshrc
+|4,39,42,0,1615879430,"~/.zshrc"
+-'  42  0  ~/.zshrc
+|4,39,42,0,1615879430,"~/.zshrc"
+-'  42  0  ~/.zshrc
+|4,39,42,0,1615879430,"~/.zshrc"
+-'  42  0  ~/.zshrc
+|4,39,42,0,1615879430,"~/.zshrc"
+-'  42  0  ~/.zshrc
+|4,39,42,0,1615879430,"~/.zshrc"
+-'  42  0  ~/.zshrc
+|4,39,42,0,1615879430,"~/.zshrc"
+-'  42  0  ~/.zshrc
+|4,39,42,0,1615879430,"~/.zshrc"
+-'  42  0  ~/.zshrc
+|4,39,42,0,1615879430,"~/.zshrc"
+-'  42  0  ~/.zshrc
+|4,39,42,0,1615879430,"~/.zshrc"
+-'  42  0  ~/.zshrc
+|4,39,42,0,1615879430,"~/.zshrc"
+-'  42  0  ~/.zshrc
+|4,39,42,0,1615879430,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1615879423,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1615879423,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1615879423,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1615879423,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1615879423,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1615879423,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1615879423,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1615879423,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1615879423,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1615879423,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1615879423,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1615879423,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1615879423,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1615879423,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1615879423,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1615879423,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1615879423,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1615879423,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1615879423,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1615879423,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1615879423,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1615879423,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1615879423,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1615879423,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1615879423,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1615879423,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1615879423,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1615879423,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1615879423,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1615879423,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1615879423,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1615879423,"~/.zshrc"
+-'  479  2  ~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
+|4,39,479,2,1615879215,"~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
+-'  479  2  ~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
+|4,39,479,2,1615879215,"~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
+-'  479  2  ~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
+|4,39,479,2,1615879215,"~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
+-'  479  2  ~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
+|4,39,479,2,1615879215,"~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
+>>>>>>> 756867843bb94697ece44df157482691a3bf7972
 
 # History of marks within files (newest to oldest):
 
