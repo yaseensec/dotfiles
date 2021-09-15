@@ -15,17 +15,17 @@
 
 # Command Line History (newest to oldest):
 :q
-|2,0,1624001134,,"q"
+|2,0,1631634335,,"q"
+:PlugInstall
+|2,0,1631634329,,"PlugInstall"
+:q!
+|2,0,1631584118,,"q!"
 :qa
 |2,0,1615953244,,"qa"
 :wq
 |2,0,1615879430,,"wq"
 :PlugUpdate
 |2,0,1615879163,,"PlugUpdate"
-:q!
-|2,0,1615878752,,"q!"
-:PlugInstall
-|2,0,1615878697,,"PlugInstall"
 :w
 |2,0,1611750903,,"w"
 
@@ -71,6 +71,192 @@
 # Jumplist (newest first):
 -'  21  0  ~/darkerp/Docker-Compose/frappe.conf
 |4,39,21,0,1624001134,"~/darkerp/Docker-Compose/frappe.conf"
+-'  21  0  ~/darkerp/Docker-Compose/frappe.conf
+|4,39,21,0,1624001134,"~/darkerp/Docker-Compose/frappe.conf"
+-'  21  0  ~/darkerp/Docker-Compose/frappe.conf
+|4,39,21,0,1624001134,"~/darkerp/Docker-Compose/frappe.conf"
+-'  21  0  ~/darkerp/Docker-Compose/frappe.conf
+|4,39,21,0,1624001134,"~/darkerp/Docker-Compose/frappe.conf"
+-'  21  0  ~/darkerp/Docker-Compose/frappe.conf
+|4,39,21,0,1624001134,"~/darkerp/Docker-Compose/frappe.conf"
+-'  21  0  ~/darkerp/Docker-Compose/frappe.conf
+|4,39,21,0,1624001134,"~/darkerp/Docker-Compose/frappe.conf"
+-'  21  0  ~/darkerp/Docker-Compose/frappe.conf
+|4,39,21,0,1624001134,"~/darkerp/Docker-Compose/frappe.conf"
+-'  21  0  ~/darkerp/Docker-Compose/frappe.conf
+|4,39,21,0,1624001134,"~/darkerp/Docker-Compose/frappe.conf"
+-'  21  0  ~/darkerp/Docker-Compose/frappe.conf
+|4,39,21,0,1624001134,"~/darkerp/Docker-Compose/frappe.conf"
+-'  21  0  ~/darkerp/Docker-Compose/frappe.conf
+|4,39,21,0,1624001134,"~/darkerp/Docker-Compose/frappe.conf"
+-'  21  0  ~/darkerp/Docker-Compose/frappe.conf
+|4,39,21,0,1624001134,"~/darkerp/Docker-Compose/frappe.conf"
+-'  21  0  ~/darkerp/Docker-Compose/frappe.conf
+|4,39,21,0,1624001134,"~/darkerp/Docker-Compose/frappe.conf"
+-'  21  0  ~/darkerp/Docker-Compose/frappe.conf
+|4,39,21,0,1624001134,"~/darkerp/Docker-Compose/frappe.conf"
+-'  21  0  ~/darkerp/Docker-Compose/frappe.conf
+|4,39,21,0,1624001134,"~/darkerp/Docker-Compose/frappe.conf"
+-'  21  0  ~/darkerp/Docker-Compose/frappe.conf
+|4,39,21,0,1624001134,"~/darkerp/Docker-Compose/frappe.conf"
+-'  21  0  ~/darkerp/Docker-Compose/frappe.conf
+|4,39,21,0,1624001134,"~/darkerp/Docker-Compose/frappe.conf"
+-'  21  0  ~/darkerp/Docker-Compose/frappe.conf
+|4,39,21,0,1624001134,"~/darkerp/Docker-Compose/frappe.conf"
+-'  21  0  ~/darkerp/Docker-Compose/frappe.conf
+|4,39,21,0,1624001134,"~/darkerp/Docker-Compose/frappe.conf"
+-'  21  0  ~/darkerp/Docker-Compose/frappe.conf
+|4,39,21,0,1624001134,"~/darkerp/Docker-Compose/frappe.conf"
+-'  21  0  ~/darkerp/Docker-Compose/frappe.conf
+|4,39,21,0,1624001134,"~/darkerp/Docker-Compose/frappe.conf"
+-'  21  0  ~/darkerp/Docker-Compose/frappe.conf
+|4,39,21,0,1624001134,"~/darkerp/Docker-Compose/frappe.conf"
+-'  21  0  ~/darkerp/Docker-Compose/frappe.conf
+|4,39,21,0,1624001134,"~/darkerp/Docker-Compose/frappe.conf"
+-'  21  0  ~/darkerp/Docker-Compose/frappe.conf
+|4,39,21,0,1624001134,"~/darkerp/Docker-Compose/frappe.conf"
+-'  21  0  ~/darkerp/Docker-Compose/frappe.conf
+|4,39,21,0,1624001134,"~/darkerp/Docker-Compose/frappe.conf"
+-'  21  0  ~/darkerp/Docker-Compose/frappe.conf
+|4,39,21,0,1624001134,"~/darkerp/Docker-Compose/frappe.conf"
+-'  21  0  ~/darkerp/Docker-Compose/frappe.conf
+|4,39,21,0,1624001134,"~/darkerp/Docker-Compose/frappe.conf"
+-'  21  0  ~/darkerp/Docker-Compose/frappe.conf
+|4,39,21,0,1624001134,"~/darkerp/Docker-Compose/frappe.conf"
+-'  21  0  ~/darkerp/Docker-Compose/frappe.conf
+|4,39,21,0,1624001134,"~/darkerp/Docker-Compose/frappe.conf"
+-'  21  0  ~/darkerp/Docker-Compose/frappe.conf
+|4,39,21,0,1624001134,"~/darkerp/Docker-Compose/frappe.conf"
+-'  21  0  ~/darkerp/Docker-Compose/frappe.conf
+|4,39,21,0,1624001134,"~/darkerp/Docker-Compose/frappe.conf"
+-'  21  0  ~/darkerp/Docker-Compose/frappe.conf
+|4,39,21,0,1624001134,"~/darkerp/Docker-Compose/frappe.conf"
+-'  21  0  ~/darkerp/Docker-Compose/frappe.conf
+|4,39,21,0,1624001134,"~/darkerp/Docker-Compose/frappe.conf"
+-'  1  0  ~/Documents/test/dir2/3
+|4,39,1,0,1615953244,"~/Documents/test/dir2/3"
+-'  1  0  ~/Documents/test/dir2/3
+|4,39,1,0,1615953244,"~/Documents/test/dir2/3"
+-'  1  0  ~/Documents/test/dir2/3
+|4,39,1,0,1615953244,"~/Documents/test/dir2/3"
+-'  1  0  ~/Documents/test/dir2/3
+|4,39,1,0,1615953244,"~/Documents/test/dir2/3"
+-'  1  0  ~/Documents/test/dir2/3
+|4,39,1,0,1615953244,"~/Documents/test/dir2/3"
+-'  1  0  ~/Documents/test/dir2/3
+|4,39,1,0,1615953244,"~/Documents/test/dir2/3"
+-'  1  0  ~/Documents/test/dir2/3
+|4,39,1,0,1615953244,"~/Documents/test/dir2/3"
+-'  1  0  ~/Documents/test/dir2/3
+|4,39,1,0,1615953244,"~/Documents/test/dir2/3"
+-'  1  0  ~/Documents/test/dir2/3
+|4,39,1,0,1615953244,"~/Documents/test/dir2/3"
+-'  1  0  ~/Documents/test/dir2/3
+|4,39,1,0,1615953244,"~/Documents/test/dir2/3"
+-'  1  0  ~/Documents/test/dir2/3
+|4,39,1,0,1615953244,"~/Documents/test/dir2/3"
+-'  1  0  ~/Documents/test/dir2/3
+|4,39,1,0,1615953244,"~/Documents/test/dir2/3"
+-'  1  0  ~/Documents/test/dir2/3
+|4,39,1,0,1615953244,"~/Documents/test/dir2/3"
+-'  1  0  ~/Documents/test/dir2/3
+|4,39,1,0,1615953244,"~/Documents/test/dir2/3"
+-'  1  0  ~/Documents/test/dir2/3
+|4,39,1,0,1615953244,"~/Documents/test/dir2/3"
+-'  1  0  ~/Documents/test/dir2/3
+|4,39,1,0,1615953244,"~/Documents/test/dir2/3"
+-'  1  0  ~/Documents/test/dir2/3
+|4,39,1,0,1615953244,"~/Documents/test/dir2/3"
+-'  1  0  ~/Documents/test/dir2/3
+|4,39,1,0,1615953244,"~/Documents/test/dir2/3"
+-'  1  0  ~/Documents/test/dir2/3
+|4,39,1,0,1615953244,"~/Documents/test/dir2/3"
+-'  1  0  ~/Documents/test/dir2/3
+|4,39,1,0,1615953244,"~/Documents/test/dir2/3"
+-'  1  0  ~/Documents/test/dir2/3
+|4,39,1,0,1615953244,"~/Documents/test/dir2/3"
+-'  1  0  ~/Documents/test/dir2/3
+|4,39,1,0,1615953244,"~/Documents/test/dir2/3"
+-'  1  0  ~/Documents/test/dir2/3
+|4,39,1,0,1615953244,"~/Documents/test/dir2/3"
+-'  1  0  ~/Documents/test/dir2/3
+|4,39,1,0,1615953244,"~/Documents/test/dir2/3"
+-'  1  0  ~/Documents/test/dir2/3
+|4,39,1,0,1615953244,"~/Documents/test/dir2/3"
+-'  1  0  ~/Documents/test/dir2/3
+|4,39,1,0,1615953244,"~/Documents/test/dir2/3"
+-'  1  0  ~/Documents/test/dir2/3
+|4,39,1,0,1615953244,"~/Documents/test/dir2/3"
+-'  1  0  ~/Documents/test/dir2/3
+|4,39,1,0,1615953244,"~/Documents/test/dir2/3"
+-'  1  0  ~/Documents/test/dir2/3
+|4,39,1,0,1615953244,"~/Documents/test/dir2/3"
+-'  1  0  ~/Documents/test/dir2/3
+|4,39,1,0,1615953244,"~/Documents/test/dir2/3"
+-'  1  0  ~/Documents/test/dir2/3
+|4,39,1,0,1615953244,"~/Documents/test/dir2/3"
+-'  1  0  ~/Documents/test/dir2/3
+|4,39,1,0,1615953244,"~/Documents/test/dir2/3"
+-'  1  0  ~/Documents/test/dir2/3
+|4,39,1,0,1615953244,"~/Documents/test/dir2/3"
+-'  1  0  ~/Documents/test/dir2/3
+|4,39,1,0,1615953244,"~/Documents/test/dir2/3"
+-'  1  0  ~/Documents/test/dir2/3
+|4,39,1,0,1615953244,"~/Documents/test/dir2/3"
+-'  1  0  ~/Documents/test/dir2/3
+|4,39,1,0,1615953244,"~/Documents/test/dir2/3"
+-'  1  0  ~/Documents/test/dir2/3
+|4,39,1,0,1615953244,"~/Documents/test/dir2/3"
+-'  1  0  ~/Documents/test/dir2/3
+|4,39,1,0,1615953244,"~/Documents/test/dir2/3"
+-'  1  0  ~/Documents/test/dir2/3
+|4,39,1,0,1615953244,"~/Documents/test/dir2/3"
+-'  1  0  ~/Documents/test/dir2/3
+|4,39,1,0,1615953244,"~/Documents/test/dir2/3"
+-'  1  0  ~/Documents/test/dir2/3
+|4,39,1,0,1615953244,"~/Documents/test/dir2/3"
+-'  1  0  ~/Documents/test/dir2/3
+|4,39,1,0,1615953244,"~/Documents/test/dir2/3"
+-'  1  0  ~/Documents/test/dir2/3
+|4,39,1,0,1615953244,"~/Documents/test/dir2/3"
+-'  1  0  ~/Documents/test/dir2/3
+|4,39,1,0,1615953244,"~/Documents/test/dir2/3"
+-'  1  0  ~/Documents/test/dir2/3
+|4,39,1,0,1615953244,"~/Documents/test/dir2/3"
+-'  1  0  ~/Documents/test/dir2/3
+|4,39,1,0,1615953244,"~/Documents/test/dir2/3"
+-'  1  0  ~/Documents/test/dir2/3
+|4,39,1,0,1615953244,"~/Documents/test/dir2/3"
+-'  1  0  ~/Documents/test/dir2/3
+|4,39,1,0,1615953244,"~/Documents/test/dir2/3"
+-'  1  0  ~/Documents/test/dir2/3
+|4,39,1,0,1615953244,"~/Documents/test/dir2/3"
+-'  1  0  ~/Documents/test/dir2/3
+|4,39,1,0,1615953244,"~/Documents/test/dir2/3"
+-'  1  0  ~/Documents/test/dir2/3
+|4,39,1,0,1615953244,"~/Documents/test/dir2/3"
+-'  1  0  ~/Documents/test/dir2/3
+|4,39,1,0,1615953244,"~/Documents/test/dir2/3"
+-'  1  0  ~/Documents/test/dir2/3
+|4,39,1,0,1615953244,"~/Documents/test/dir2/3"
+-'  1  0  ~/Documents/test/dir2/3
+|4,39,1,0,1615953244,"~/Documents/test/dir2/3"
+-'  1  0  ~/Documents/test/dir2/3
+|4,39,1,0,1615953244,"~/Documents/test/dir2/3"
+-'  1  0  ~/Documents/test/dir2/3
+|4,39,1,0,1615953244,"~/Documents/test/dir2/3"
+-'  1  0  ~/Documents/test/dir2/3
+|4,39,1,0,1615953244,"~/Documents/test/dir2/3"
+-'  1  0  ~/Documents/test/dir2/3
+|4,39,1,0,1615953244,"~/Documents/test/dir2/3"
+-'  1  0  ~/Documents/test/dir2/3
+|4,39,1,0,1615953244,"~/Documents/test/dir2/3"
+-'  1  0  ~/Documents/test/dir2/3
+|4,39,1,0,1615953244,"~/Documents/test/dir2/3"
+-'  1  0  ~/Documents/test/dir2/3
+|4,39,1,0,1615953244,"~/Documents/test/dir2/3"
+-'  1  0  ~/Documents/test/dir2/3
+|4,39,1,0,1615953244,"~/Documents/test/dir2/3"
 -'  1  0  ~/Documents/test/dir2/3
 |4,39,1,0,1615953244,"~/Documents/test/dir2/3"
 -'  1  0  ~/Documents/test/dir2/3
@@ -81,194 +267,6 @@
 |4,39,1,0,1615953216,"~/Documents/test/dir2/4"
 -'  1  0  ~/Documents/test/dir2/4
 |4,39,1,0,1615953216,"~/Documents/test/dir2/4"
--'  1  0  ~/Documents/test/dir2/4
-|4,39,1,0,1615953216,"~/Documents/test/dir2/4"
--'  1  0  ~/Documents/test/dir2/5
-|4,39,1,0,1615953207,"~/Documents/test/dir2/5"
--'  1  0  ~/Documents/test/dir2/5
-|4,39,1,0,1615953207,"~/Documents/test/dir2/5"
--'  1  0  ~/Documents/test/dir2/5
-|4,39,1,0,1615953207,"~/Documents/test/dir2/5"
--'  1  0  ~/Documents/test/dir2/5
-|4,39,1,0,1615953207,"~/Documents/test/dir2/5"
--'  1  0  ~/Documents/test/dir2/5
-|4,39,1,0,1615953207,"~/Documents/test/dir2/5"
--'  1  0  ~/Documents/test/dir2/5
-|4,39,1,0,1615953207,"~/Documents/test/dir2/5"
--'  1  0  ~/Documents/test/dir2/5
-|4,39,1,0,1615953207,"~/Documents/test/dir2/5"
--'  1  0  ~/Documents/test/dir2/5
-|4,39,1,0,1615953207,"~/Documents/test/dir2/5"
--'  42  0  ~/.zshrc
-|4,39,42,0,1615879430,"~/.zshrc"
--'  42  0  ~/.zshrc
-|4,39,42,0,1615879430,"~/.zshrc"
--'  42  0  ~/.zshrc
-|4,39,42,0,1615879430,"~/.zshrc"
--'  42  0  ~/.zshrc
-|4,39,42,0,1615879430,"~/.zshrc"
--'  42  0  ~/.zshrc
-|4,39,42,0,1615879430,"~/.zshrc"
--'  42  0  ~/.zshrc
-|4,39,42,0,1615879430,"~/.zshrc"
--'  42  0  ~/.zshrc
-|4,39,42,0,1615879430,"~/.zshrc"
--'  42  0  ~/.zshrc
-|4,39,42,0,1615879430,"~/.zshrc"
--'  42  0  ~/.zshrc
-|4,39,42,0,1615879430,"~/.zshrc"
--'  42  0  ~/.zshrc
-|4,39,42,0,1615879430,"~/.zshrc"
--'  42  0  ~/.zshrc
-|4,39,42,0,1615879430,"~/.zshrc"
--'  42  0  ~/.zshrc
-|4,39,42,0,1615879430,"~/.zshrc"
--'  42  0  ~/.zshrc
-|4,39,42,0,1615879430,"~/.zshrc"
--'  42  0  ~/.zshrc
-|4,39,42,0,1615879430,"~/.zshrc"
--'  42  0  ~/.zshrc
-|4,39,42,0,1615879430,"~/.zshrc"
--'  42  0  ~/.zshrc
-|4,39,42,0,1615879430,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1615879423,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1615879423,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1615879423,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1615879423,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1615879423,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1615879423,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1615879423,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1615879423,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1615879423,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1615879423,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1615879423,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1615879423,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1615879423,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1615879423,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1615879423,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1615879423,"~/.zshrc"
--'  479  2  ~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,479,2,1615879215,"~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  479  2  ~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,479,2,1615879215,"~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  479  2  ~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,479,2,1615879215,"~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  479  2  ~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,479,2,1615879215,"~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  479  2  ~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,479,2,1615879215,"~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  479  2  ~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,479,2,1615879215,"~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  479  2  ~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,479,2,1615879215,"~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  479  2  ~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,479,2,1615879215,"~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  479  2  ~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,479,2,1615879215,"~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  479  2  ~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,479,2,1615879215,"~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  479  2  ~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,479,2,1615879215,"~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  479  2  ~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,479,2,1615879215,"~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  479  2  ~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,479,2,1615879215,"~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  479  2  ~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,479,2,1615879215,"~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  479  2  ~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,479,2,1615879215,"~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  479  2  ~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,479,2,1615879215,"~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  479  2  ~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,479,2,1615879215,"~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  479  2  ~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,479,2,1615879215,"~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  479  2  ~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,479,2,1615879215,"~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  479  2  ~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,479,2,1615879215,"~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  479  2  ~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,479,2,1615879215,"~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  479  2  ~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,479,2,1615879215,"~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  479  2  ~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,479,2,1615879215,"~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  479  2  ~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,479,2,1615879215,"~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  479  2  ~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,479,2,1615879215,"~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  479  2  ~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,479,2,1615879215,"~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  479  2  ~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,479,2,1615879215,"~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  479  2  ~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,479,2,1615879215,"~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  479  2  ~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,479,2,1615879215,"~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  479  2  ~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,479,2,1615879215,"~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  479  2  ~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,479,2,1615879215,"~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  479  2  ~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt
-|4,39,479,2,1615879215,"~/References/Arch-I3-Setup/Arch Installation Guide(EFI).txt"
--'  1  0  ~/.vim/NERD_tree_1
-|4,39,1,0,1615879147,"~/.vim/NERD_tree_1"
--'  1  0  ~/.vim/NERD_tree_1
-|4,39,1,0,1615879147,"~/.vim/NERD_tree_1"
--'  1  0  ~/.vim/NERD_tree_1
-|4,39,1,0,1615879147,"~/.vim/NERD_tree_1"
--'  1  0  ~/.vim/NERD_tree_1
-|4,39,1,0,1615879147,"~/.vim/NERD_tree_1"
--'  1  0  ~/.vim/NERD_tree_1
-|4,39,1,0,1615879147,"~/.vim/NERD_tree_1"
--'  1  0  ~/.vim/NERD_tree_1
-|4,39,1,0,1615879147,"~/.vim/NERD_tree_1"
--'  1  0  ~/.vim/NERD_tree_1
-|4,39,1,0,1615879147,"~/.vim/NERD_tree_1"
--'  1  0  ~/.vim/NERD_tree_1
-|4,39,1,0,1615879147,"~/.vim/NERD_tree_1"
--'  1  0  ~/.vim/NERD_tree_1
-|4,39,1,0,1615879147,"~/.vim/NERD_tree_1"
--'  1  0  ~/.vim/NERD_tree_1
-|4,39,1,0,1615879147,"~/.vim/NERD_tree_1"
--'  1  0  ~/.vim/NERD_tree_1
-|4,39,1,0,1615879147,"~/.vim/NERD_tree_1"
--'  1  0  ~/.vim/NERD_tree_1
-|4,39,1,0,1615879147,"~/.vim/NERD_tree_1"
--'  1  0  ~/.vim/NERD_tree_1
-|4,39,1,0,1615879147,"~/.vim/NERD_tree_1"
--'  1  0  ~/.vim/NERD_tree_1
-|4,39,1,0,1615879147,"~/.vim/NERD_tree_1"
--'  1  0  ~/.vim/NERD_tree_1
-|4,39,1,0,1615879147,"~/.vim/NERD_tree_1"
--'  1  0  ~/.vim/NERD_tree_1
-|4,39,1,0,1615879147,"~/.vim/NERD_tree_1"
--'  1  0  ~/.vim/NERD_tree_1
-|4,39,1,0,1615879147,"~/.vim/NERD_tree_1"
--'  1  0  ~/.vim/NERD_tree_1
-|4,39,1,0,1615879147,"~/.vim/NERD_tree_1"
--'  1  0  ~/.vim/NERD_tree_1
-|4,39,1,0,1615879147,"~/.vim/NERD_tree_1"
--'  1  0  ~/.vim/NERD_tree_1
-|4,39,1,0,1615879147,"~/.vim/NERD_tree_1"
--'  1  0  ~/.vim/NERD_tree_1
-|4,39,1,0,1615879147,"~/.vim/NERD_tree_1"
 
 # History of marks within files (newest to oldest):
 

@@ -340,20 +340,22 @@ bindsym $mod+r mode "resize"
     ## Logout,Suspend,Hibernate,Reboot,Shutdown ##
 ######################################################
 
- set $mode_system (l) logout, (s) suspend, (h) hibernate, (r) reboot, (p) shutdown
-                   mode "$mode_system" {
-                 
-                   bindsym l exec --no-startup-id i3-msg exit, mode "default"
-                   bindsym s exec --no-startup-id systemctl suspend, mode "default"
-                   bindsym h exec --no-startup-id systemctl hibernate, mode "default"
-                   bindsym r exec --no-startup-id systemctl reboot, mode "default"
-                   bindsym p exec --no-startup-id systemctl poweroff, mode "default"
+## set $mode_system (l) logout, (s) suspend, (h) hibernate, (r) reboot, (p) shutdown
+##                   mode "$mode_system" {
+##                 
+##                   bindsym l exec --no-startup-id i3-msg exit, mode "default"
+##                  bindsym s exec --no-startup-id systemctl suspend, mode "default"
+##                   bindsym h exec --no-startup-id systemctl hibernate, mode "default"
+##                   bindsym r exec --no-startup-id systemctl reboot, mode "default"
+##                   bindsym p exec --no-startup-id systemctl poweroff, mode "default"
 
                        # back to normal: Enter or Escape
-                         bindsym Return mode "default"
-                         bindsym Escape mode "default"
-                   }
-                   bindsym $mod+shift+e mode "$mode_system"
+##                         bindsym Return mode "default"
+##                         bindsym Escape mode "default"
+##                   }
+##                   bindsym $mod+shift+e mode "$mode_system"
+
+bindsym $mod+shift+e exec --no-startup-id $HOME/.config/rofi/powermenu/powermenu.sh
 
 ######################################################
     ## Adjusting Volume with Pactl & Pulseaudio ##
@@ -394,7 +396,7 @@ exec_always --no-startup-id xset -b
     ## Startup Applications ##
 ##################################
 
-exec_always --no-startup-id pulseeffects --gapplication-service
+exec_always --no-startup-id easyeffects --gapplication-service
 exec --no-startup-id nm-applet
 exec --no-startup-id dunst
 exec --no-startup-id blueman-applet
@@ -427,7 +429,7 @@ bindsym $mod+p exec --no-startup-id mpc prev
     ## Feh & Picom ##
 #########################
 
-exec_always --no-startup-id feh  --bg-scale ~/Pictures/Walls/0213.jpg
+exec_always --no-startup-id feh  --bg-scale ~/Pictures/Walls/horses.jpg
 exec_always --no-startup-id picom --experimental-backends --config ~/.config/picom/picom.conf
 
 ################################################
@@ -437,7 +439,8 @@ exec_always --no-startup-id picom --experimental-backends --config ~/.config/pic
 bindsym $mod+Return exec --no-startup-id alacritty
 bindsym $mod+b exec --no-startup-id firefox
 bindsym $mod+c exec --no-startup-id vscodium
-bindsym $mod+d exec --no-startup-id rofi -show drun -show-icons -icon-theme "La Capitaine" -sidebar-mode onrun
+#bindsym $mod+d exec --no-startup-id rofi -show drun -show-icons -icon-theme "La Capitaine" -sidebar-mode onrun
+bindsym $mod+d exec --no-startup-id "~/.config/rofi/launchers/text/launcher.sh"
 bindsym $mod+q exec --no-startup-id virt-manager
 bindsym $mod+t exec --no-startup-id alacritty
 bindsym $mod+z exec --no-startup-id i3-msg workspace 3 && alacritty --class=ncmpcpp -e ncmpcpp

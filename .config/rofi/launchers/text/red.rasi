@@ -1,0 +1,211 @@
+/*
+ *
+ * Author  : Aditya Shakya
+ * Mail    : adi1090x@gmail.com
+ * Github  : @adi1090x
+ * Twitter : @adi1090x
+ *
+ */
+
+configuration {
+    font: 							"Iosevka Nerd Font 12";
+    fixed-num-lines: 				true;
+    show-icons: 					false;
+    sidebar-mode: 					true;
+    scroll-method: 					0;
+    window-format: 					"[{w}] ··· {c} ···   {t}";
+    click-to-exit: 					true;
+    combi-hide-mode-prefix: 		false;
+    display-window: 				"";
+    display-windowcd: 				"";
+    display-run: 					"";
+    display-ssh: 					"";
+    display-drun: 					"";
+    display-combi: 					"";
+}
+
+@import "styles/colors.rasi"
+
+* {
+    background-color:             	@al;
+}
+
+window {
+    border: 						0px;
+    border-color: 					@red1;
+    border-radius: 					0px;
+    padding: 						220px;
+    width: 							100%;
+    height: 						100%;
+}
+
+prompt {
+    background-color:               @tp;
+    spacing: 						0;
+    border: 						0;
+    text-color: 					@red1;
+}
+
+textbox-prompt-colon {
+    background-color:               @tp;
+    spacing: 						0;
+    expand: 						false;
+    str: 							" ";
+    margin:							0px 4px 0px 0px;
+    text-color: 					inherit;
+}
+
+entry {
+    background-color:               @tp;
+    spacing: 						0;
+    spacing:    					0;
+    text-color: 					@red1;
+}
+
+case-indicator {
+    background-color:               @tp;
+    spacing: 						0;
+    spacing:    					0;
+    text-color: 					@red1;
+}
+
+inputbar {
+    background-color:               @tp;
+    spacing: 						0;
+    spacing:    					0px;
+    text-color: 					@red1;
+    padding:    					1px;
+    children: 						[ prompt,textbox-prompt-colon,entry,case-indicator ];
+}
+
+mainbox {
+    background-color:               @tp;
+    spacing: 						0;
+    border: 						0px;
+    border-color: 					@red1;
+    padding: 						6;
+}
+
+listview {
+    background-color:               @tp;
+    spacing: 						0;
+    lines:							3;
+    columns:						3;
+    fixed-height: 					0;
+    border: 						0px;
+    border-color: 					@red1;
+    spacing: 						5px;
+    scrollbar: 						false;
+    padding: 						25px 5px -20px 5px;
+}
+
+element-text, element-icon {
+    background-color: @tp;
+    text-color:       inherit;
+}
+
+element {
+    spacing: 						0;
+    border: 						4px;
+    border-radius: 					4px;
+    padding: 						15px;
+}
+element normal.normal {
+    background-color: 				@tp;
+    text-color:       				@red;
+}
+element normal.urgent {
+    background-color: 				@al;
+    text-color:       				@red;
+}
+element normal.active {
+    background-color: 				@al;
+    text-color:       				@red;
+    border-color: 					@green;
+}
+element selected.normal {
+    background-color: 				@tp;
+    text-color:       				@red1;
+    border-color: 					@red1;
+    border: 						0% 0% 0.2% 0.2%;
+    border-radius: 					4%;
+    border-color: 					@red1;
+}
+element selected.urgent {
+    background-color: 				@al;
+    text-color:       				@red;
+}
+element selected.active {
+    background-color: 				@al;
+    text-color:       				@red;
+    border-color: 					@red;
+}
+element alternate.normal {
+    background-color: 				@tp;
+    text-color:       				@red;
+}
+element alternate.urgent {
+    background-color: 				@al;
+    text-color:       				@red;
+}
+element alternate.active {
+    background-color: 				@al;
+    text-color:       				@red;
+}
+
+sidebar {
+    border:       					0px;
+    border-color: 					@red1;
+    border-radius: 					0px;
+}
+
+mode-switcher {
+    background-color: @tp;
+}
+
+button {
+    background-color: 				@tp;
+    horizontal-align:               0.5;
+    vertical-align:                 0.5;
+    margin: 						5px;
+    padding: 						15px;
+    text-color: 					@red;
+    border: 						0px;
+    border-radius: 					4px;
+    border-color: 					@red;
+}
+
+
+button selected {
+    background-color:             	@tp;
+    text-color: 					@red1;
+    border: 						0% 0% 0.2% 0.2%;
+    border-radius: 					4%;
+    border-color: 					@red1;
+}
+
+button normal.normal {
+    background-color: 				@tp;
+    text-color:       				@red;
+    border: 						0% 0% 0.2% 0.2%;
+    border-radius: 					4%;
+    border-color: 					@red;
+}
+
+scrollbar {
+    width:        					4px;
+    border:       					0px;
+    handle-color: 					@red;
+    handle-width: 					8px;
+    padding:      					0;
+}
+
+message {
+    border: 						0px;
+    border-color: 					@red1;
+    padding: 						1px;
+}
+
+textbox {
+    text-color: 					@red;
+}

@@ -2,7 +2,7 @@
 
 sleep 5
 #wget -q --tries=10 --timeout=20 --spider http://www.yaseenins.com > /dev/null
-wget -q --tries=10 --timeout=20 --spider http://archlinux.org > /dev/null
+wget -q --tries=10 --timeout=20 --spider http://archlinux.org 2> /dev/null
 if [[ $? -eq 0 ]]; then
    if ! updates_arch=$(checkupdates 2> /dev/null | wc -l ); then
        updates_arch=0
