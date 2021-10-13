@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sleep 5
+sleep 15
 #wget -q --tries=10 --timeout=20 --spider http://www.yaseenins.com > /dev/null
 wget -q --tries=10 --timeout=20 --spider http://archlinux.org 2> /dev/null
 if [[ $? -eq 0 ]]; then

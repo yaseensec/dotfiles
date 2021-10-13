@@ -40,7 +40,6 @@ setopt prompt_subst
 
 alias vi="nvim"
 alias vim="nvim"
-alias neovim="~/Downloads/nvim-linux64/bin/nvim"
 #alias fdm="/opt/freedownloadmanager/fdm"
 alias iplbd="sudo ip link set br0 down"
 alias iplbu="sudo ip link set br0 up"
@@ -49,7 +48,6 @@ alias py="python"
 alias reflector="sudo reflector --latest 50 --protocol http --protocol https --sort rate --save /etc/pacman.d/mirrorlist"
 alias wildfly="/opt/wildfly/bin/standalone.sh"
 alias blue="sudo systemctl start bluetooth.service"
-#alias kite="/home/im/.local/share/kite/kited"
 alias p="paru -Sc --noconfirm && paru -Syu --noconfirm"
 alias d="sudo du -ach --max-depth=1"
 alias s="sudo swapon /swapfile"
@@ -93,3 +91,5 @@ case "$TERM" in (rxvt|rxvt-*|st|st-*|*xterm*|(dt|k|E)term)
     }
   ;;
 esac
+
+if [ -n "$RANGER_LEVEL" ]; then export PS1="[ranger]$PS1"; fi

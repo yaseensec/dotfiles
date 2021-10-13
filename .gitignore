@@ -22,6 +22,12 @@
 !.config/picom
 !.config/rofi
 !.config/ranger
+.config/ranger/*
+!.config/ranger/commands.py
+!.config/ranger/commands_full.py
+!.config/ranger/rc.conf
+!.config/ranger/rifle.conf
+!.config/ranger/scope.sh
 !.config/sxhkd
 !.config/zathura
 !.bash_profile

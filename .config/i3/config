@@ -379,8 +379,10 @@ bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 10 #decrease 
     ## Screenshots with Maim ##
 ###################################
 
-bindsym Print exec --no-startup-id $HOME/Pictures/Screenshots/full.sh
-bindsym $mod+Print exec --no-startup-id $HOME/Pictures/Screenshots/region.sh
+#bindsym Print exec --no-startup-id $HOME/Pictures/Screenshots/full.sh
+#bindsym $mod+Print exec --no-startup-id $HOME/Pictures/Screenshots/region.sh
+bindsym Print exec --no-startup-id maim ~/Pictures/Screenshots/$(date +%s).jpg
+bindsym $mod+Print exec --no-startup-id maim -s -u ~/Pictures/Screenshots/$(date +%s).jpg
 
 ##################
     ## XSET ##
@@ -429,7 +431,7 @@ bindsym $mod+p exec --no-startup-id mpc prev
     ## Feh & Picom ##
 #########################
 
-exec_always --no-startup-id feh  --bg-scale ~/Pictures/Walls/horses.jpg
+exec_always --no-startup-id feh  --bg-scale ~/Pictures/Walls/anime.png
 exec_always --no-startup-id picom --experimental-backends --config ~/.config/picom/picom.conf
 
 ################################################
@@ -460,10 +462,10 @@ bindsym $mod+shift+o exec --no-startup-id bookmenu -p "Select a config" -b ~/.co
 ######################################################
 
 assign [class="firefox"] $ws2
-assign [class="Tk"] $ws3
-assign [class="Kodi"] $ws4
-assign [class="VSCodium"] $ws5
-assign [class="Virt-manager"] $ws6
+#assign [class="Tk"] $ws3
+#assign [class="Kodi"] $ws4
+assign [class="VSCodium"] $ws4
+assign [class="Virt-manager"] $ws5
 
 ###########################
     ## Misc & Unused ##
