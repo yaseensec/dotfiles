@@ -36,7 +36,7 @@ source /usr/share/zsh/plugins/zsh-you-should-use/you-should-use.plugin.zsh 2>/de
 source ~/agnoster.zsh-theme
 setopt prompt_subst
 
-#Aliases
+##Aliases
 
 alias vi="nvim"
 alias vim="nvim"
