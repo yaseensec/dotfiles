@@ -1,0 +1,16 @@
+--ignore-errors
+# --no-playlist
+
+# Save in ~/Videos
+-o ~/Movies/%(title)s.%(ext)s
+
+# Prefer 1080p or lower resolutions
+#-f bestvideo[ext=mp4][width<2000][height<=1200]+bestaudio[ext=m4a]/bestvideo[ext=webm][width<2000][height<=1200]+bestaudio[ext=webm]/bestvideo[width<2000][height<=1200]+bestaudio/best[width<2000][height<=1200]/best
+
+# Prefer 720p or lower resolutions
+-f bestvideo[ext=mp4][width<1300][height<=750]+bestaudio[ext=m4a]/bestvideo[ext=webm][width<1300][height<=750]+bestaudio[ext=webm]/bestvideo[width<1300][height<=750]+bestaudio/best[width<1300][height<=750]/best
+
+#--external-downloader aria2c 
+#--external-downloader-args "-j 16 -x 16 -s 16 -k 1M"
+--downloader http:aria2c
+--downloader-args "aria2c:-j 16 -x 16 -s 16 -k 1M"

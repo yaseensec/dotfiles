@@ -1,0 +1,15 @@
+{
+  "tls": true,
+  "tlsverify": true,
+  "tlscacert": "/home/yaseen/Downloads/Docker-Swarm-CA/Darkerp/ca.pem",
+  "tlscert": "/home/yaseen/Downloads/Docker-Swarm-CA/Darkerp/server/server-cert.pem",
+  "tlskey": "/home/yaseen/Downloads/Docker-Swarm-CA/Darkerp/server/server-key.pem",
+  "hosts": ["unix:///var/run/docker.sock", "tcp://192.168.0.2:2376"],
+  "exec-opts": ["native.cgroupdriver=systemd"],
+  "log-driver": "json-file",
+  "log-opts": {
+    "max-size": "100m"
+  },
+  "storage-driver": "overlay2",
+  "data-root": "/home/yaseen/Docker"
+}

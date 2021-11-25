@@ -1,0 +1,12 @@
+--ignore-errors
+# --no-playlist
+
+# Save in ~/Music
+-o ~/Music/6.YT/%(title)s.%(ext)s
+
+# Prefer Mp3
+-x
+--audio-format mp3
+
+--downloader http:aria2c
+--downloader-args "aria2c:-j 16 -x 16 -s 16 -k 1M"

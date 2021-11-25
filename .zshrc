@@ -52,10 +52,13 @@ alias p="paru -Sc --noconfirm && paru -Syu --noconfirm"
 alias d="sudo du -ach --max-depth=1"
 alias s="sudo swapon /swapfile"
 alias so="sudo swapoff -v /swapfile"
-alias ssh-node1="ssh yaseen@192.168.122.214"
-alias ssh-node2="ssh yaseen@192.168.122.151"
+alias ssh-enigma="ssh yaseen@192.168.122.111"
+alias ssh-node2="ssh yaseen@192.168.122.77"
 alias ssh-rhel="ssh root@192.168.122.31"
 alias ssh-tx="ssh u0_a214@192.168.0.3 -p 8022"
+alias yv="yt-dlp --config-location '~/.config/youtube-dl/config-video'"
+alias ym="yt-dlp --config-location '~/.config/youtube-dl/config-audio'"
+
 # Changing "ls" to "exa"
 alias ls='exa -g --color=always --group-directories-first' # my preferred listing
 alias la='exa -ag --color=always --group-directories-first'  # all files and dirs
