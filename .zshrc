@@ -56,6 +56,10 @@ alias ssh-enigma="ssh yaseen@192.168.122.111"
 alias ssh-node2="ssh yaseen@192.168.122.77"
 alias ssh-rhel="ssh root@192.168.122.31"
 alias ssh-tx="ssh u0_a214@192.168.0.3 -p 8022"
+alias std="sudo systemctl start docker"
+alias spd="sudo systemctl stop docker"
+alias rtd="sudo systemctl restart docker"
+alias ssd="sudo systemctl status docker"
 alias yv="yt-dlp --config-location '~/.config/youtube-dl/config-video'"
 alias ym="yt-dlp --config-location '~/.config/youtube-dl/config-audio'"
 
@@ -74,7 +78,7 @@ unset LESS;
 export TERM=xterm-256color
 export GIT_EDITOR=nvim
 
-path+=('/home/yaseen/.local/bin/')
+path+=('~/.local/bin/')
 
 #fnm
 #eval "$(fnm env)"
