@@ -431,7 +431,7 @@ bindsym $mod+p exec --no-startup-id mpc prev
     ## Feh & Picom ##
 #########################
 
-exec_always --no-startup-id feh  --bg-scale ~/Pictures/Walls/anime.png
+exec_always --no-startup-id feh  --bg-scale ~/Pictures/Walls/0213.jpg
 exec_always --no-startup-id picom --experimental-backends --config ~/.config/picom/picom.conf
 
 ################################################

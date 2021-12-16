@@ -1,6 +1,6 @@
 "{{{ Plugins
-"call plug#begin('~/.config/nvim/plugged')
-call plug#begin()
+call plug#begin('~/.config/nvim/plugged')
+"call plug#begin()
     Plug 'preservim/nerdtree'
     Plug 'easymotion/vim-easymotion'
     Plug 'tomasiser/vim-code-dark'

@@ -13,16 +13,15 @@ bindkey -e
 
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
-zstyle :compinstall filename '/home/im/.zshrc'
 
-# Basic auto/tab complete:
+zstyle ':completion:*' completer _complete _ignored
+zstyle ':completion:*' menu select
+zstyle :compinstall filename '/home/yaseen/.zshrc'
 
 autoload -Uz compinit
-zstyle ':completion:*' menu select
-zmodload zsh/complist
 compinit
+zmodload zsh/complist
 _comp_options+=(globdots)		# Include hidden files.
-
 # End of lines added by compinstall
 
 #Auto Complete With Case Sensitivity
@@ -78,7 +77,8 @@ unset LESS;
 export TERM=xterm-256color
 export GIT_EDITOR=nvim
 
-path+=('~/.local/bin/')
+#path+=('~/.local/bin/')
+path+=('/home/yaseen/.local/bin')
 
 #fnm
 #eval "$(fnm env)"
@@ -100,3 +100,11 @@ case "$TERM" in (rxvt|rxvt-*|st|st-*|*xterm*|(dt|k|E)term)
 esac
 
 if [ -n "$RANGER_LEVEL" ]; then export PS1="[ranger]$PS1"; fi
+
+#bindkey "^R" history-incremental-search-backward
+
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /usr/bin/terraform terraform
+
+autoload bashcompinit && bashcompinit
+complete -C aws_completer aws
