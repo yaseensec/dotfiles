@@ -1,0 +1,100 @@
+#!/bin/sh
+## ZSH
+alias zsh-update-plugins="find "$ZDOTDIR/plugins" -type d -exec test -e '{}/.git' ';' -print0 | xargs -I {} -0 git -C {} pull -q"
+
+## get fastest mirrors
+alias mirror="sudo reflector -f 30 -l 30 --number 10 --verbose --protocol http,https --save /etc/pacman.d/mirrorlist"
+alias mirrord="sudo reflector --latest 50 --number 20 --sort delay --save /etc/pacman.d/mirrorlist"
+alias mirrors="sudo reflector --latest 50 --number 20 --sort score --save /etc/pacman.d/mirrorlist"
+alias mirrora="sudo reflector --latest 50 --number 20 --sort age --save /etc/pacman.d/mirrorlist"
+alias mirrorr="sudo reflector --latest 50 --number 20 --sort rate --save /etc/pacman.d/mirrorlist"
+
+## Colorize grep output (good for log files)
+alias grep='grep --color=auto'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+
+## Changing "ls" to "exa"
+alias ls='exa -g --color=always --group-directories-first' # my preferred listing
+alias la='exa -ag --color=always --group-directories-first'  # all files and dirs
+alias ll='exa -lHg --color=always --group-directories-first'  # long format
+alias lt='exa -aTg --color=always --group-directories-first' # tree listing
+
+## confirm before overwriting something
+alias cp="cp -i"
+alias mv='mv -i'
+alias rm='rm -i'
+
+## easier to read disk
+alias df='df -h'     # human-readable sizes
+alias free='free -m' # show sizes in MB
+alias du="sudo du -ach --max-depth=1"
+
+## get top process eating memory
+alias psmem='ps auxf | sort -nr -k 4 | head -5'
+
+## get top process eating cpu ##
+alias pscpu='ps auxf | sort -nr -k 3 | head -5'
+
+## gpg encryption
+## verify signature for isos
+alias gpg-check="gpg2 --keyserver-options auto-key-retrieve --verify"
+## receive the key of a developer
+alias gpg-retrieve="gpg2 --keyserver-options auto-key-retrieve --receive-keys"
+
+## For when keys break
+alias archlinx-fix-keys="sudo pacman-key --init && sudo pacman-key --populate archlinux && sudo pacman-key --refresh-keys"
+
+## Git
+alias dotfiles="/usr/bin/git --git-dir=$HOME/Git/Github/dotfiles/ --work-tree=$HOME"
+alias g='lazygit'
+alias m="git checkout master"
+alias s="git checkout stable"
+
+## SSH
+alias ssh-enigma="ssh yaseen@192.168.122.111"
+alias ssh-node2="ssh yaseen@192.168.122.77"
+alias ssh-rhel="ssh root@192.168.122.31"
+alias ssh-tx="ssh u0_a214@192.168.0.3 -p 8022"
+
+## Docker
+alias std="sudo systemctl start docker"
+alias spd="sudo systemctl stop docker"
+alias rtd="sudo systemctl restart docker"
+alias ssd="sudo systemctl status docker"
+
+## SWAP
+alias s="sudo swapon /swapfile"
+alias so="sudo swapoff -v /swapfile"
+
+## Youtube-dl
+alias yv="yt-dlp --config-location '~/.config/youtube-dl/config-video'"
+alias ym="yt-dlp --config-location '~/.config/youtube-dl/config-audio'"
+
+## AUR-Helpers
+alias p="paru -Sc --noconfirm && paru -Syu --noconfirm"
+
+## Aria2
+alias aria2c="aria2c -j 16 -x 16 -s 16 -k 1M"
+
+## systemd
+alias list-unit-files="systemctl list-unit-files --state=enabled"
+
+## System
+alias iplbd="sudo ip link set br0 down"
+alias iplbu="sudo ip link set br0 up"
+alias py="python"
+alias blue="sudo systemctl start bluetooth.service"
+
+
+
+### MISC
+#alias j='z'
+#alias f='zi'
+#alias mach_java_mode="export SDKMAN_DIR="$HOME/.sdkman" && [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh""
+#alias fdm="/opt/freedownloadmanager/fdm"
+#alias wildfly="/opt/wildfly/bin/standalone.sh"
+# alias lvim='nvim -u ~/.local/share/lunarvim/lvim/init.lua --cmd "set runtimepath+=~/.local/share/lunarvim/lvim"'
+alias vi="nvim"
+alias vim="nvim"
+
