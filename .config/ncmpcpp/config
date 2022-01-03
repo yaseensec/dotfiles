@@ -1,6 +1,8 @@
 ##
+execute_on_song_change="~/.config/ncmpcpp/./ncmpcpp_cover_art.sh"
+
 # Files
- mpd_music_dir = "/home/im/Music/"  
+ mpd_music_dir = "~/Music/"  
  lyrics_directory  = ~/.config/ncmpcpp/lyrics
  ncmpcpp_directory  = ~/.config/ncmpcpp
  mpd_host = "localhost"
@@ -40,14 +42,21 @@ default_place_to_search_in = "database"
 
 
 # visualizer
-visualizer_fifo_path = "/tmp/mpd.fifo"
+visualizer_data_source = "/tmp/mpd.fifo"
 visualizer_output_name = "my_fifo"
-visualizer_sync_interval = "12"
-#visualizer_type = "wave" (spectrum/wave)
-visualizer_type = "spectrum" (spectrum/wave)
+#visualizer_sync_interval = "12"
+visualizer_type = "wave" (spectrum/wave)
+#visualizer_type = "spectrum"
 visualizer_in_stereo = "yes"
-visualizer_look = "+|"
+#visualizer_look = "+|"
 
+visualizer_look = "  "          
+#visualizer_look = "▌▌"          
+
+startup_screen = visualizer      
+startup_slave_screen = playlist  
+startup_slave_screen_focus = yes 
+locked_screen_width_part = 30
 
 ## Navigation ##
 cyclic_scrolling = "yes"
@@ -70,14 +79,15 @@ incremental_seeking = "yes"
 seek_time = "10"
 
 ## Visivility ##
-header_visibility = "yes"
+header_visibility = "no"
 statusbar_visibility = "yes"
 titles_visibility = "yes"
 
 
 progressbar_look =  "=>-"
 extende progressbar_color = "yes"
-progressbar_elapsed_color = "white"
+progressbar_color = "black"
+progressbar_elapsed_color = "red"
 
 now_playing_prefix = "> "
 song_status_format = " $2%a $4⟫$3⟫ $8%t $4⟫$3⟫ $5%b "
