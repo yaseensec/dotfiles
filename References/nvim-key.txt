@@ -1,0 +1,12 @@
+space is leader key
+
+gl --> diagnostics in file like why error
+leaderlf --> formats the file as per file extension
+leadere --> explorer
+ctrl+h and ctrl+l --> jump between explorer and buffers
+shift+h and shift+l --> jump between buffers
+gr --> will show all the references of particular function in file like where it is used
+gd --> will show the main definition of particular reference
+ctrl+\ --> will open terminal(toggle terminal)
+ctrl+e --> close snippet window
+

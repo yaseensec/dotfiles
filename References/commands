@@ -1,0 +1,12 @@
+#Check the hash of file
+echo 'hash  filename' | sha256sum -c -
+
+#Pull Docker Images
+for each in {jenkins/jenkins:latest,alpine:latest,sonatype/nexus3:latest,tomcat:latest,nicolaka/netshoot:latest,maven:latest,mariadb:latest,ubuntu:latest,jc21/nginx-proxy-manager:latest,portainer/portainer-ce:latest,b4bz/homer:latest,linuxserver/heimdall:latest,postgres:latest,sonarqube:latest};do docker pull $each;done
+
+#sync and watch
+sync & watch -n 1 grep -e Dirty: /proc/meminfo
+
+#Jenkins POST requests
+curl -X POST https://jenkins.yaseenins.com/job/job-name/build --user admin:admintoken #Starts building the specified job
+curl -X POST https://jenkins.yaseenins.com/job/job-name/buildnumber/kill --user admin:admintoken # kills the job

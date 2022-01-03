@@ -32,6 +32,9 @@ autoload -Uz colors && colors
 #Auto Complete With Case Sensitivity
 zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
 
+#source ~/.config/zsh/plugins/zsh-you-should-use/you-should-use.plugin.zsh 2>/dev/null
+
+
 
 # Useful Functions
 source "$ZDOTDIR/zsh-functions"
@@ -81,10 +84,6 @@ compinit
 autoload edit-command-line; zle -N edit-command-line
 # bindkey '^e' edit-command-line
 
-## TODO Remove these
-setxkbmap -option caps:escape
-xset r rate 210 40
-
 ## Speedy keys
 xset r rate 210 40
 
@@ -95,9 +94,10 @@ export BROWSER="firefox"
 export TERM="xterm-256color"
 export GIT_EDITOR="nvim"
 
+
 ## Dynamic window title with zsh shell.
 ## Shows current directory and running (multi-line) command.
-case "$TERM" in (rxvt|rxvt-*|st|st-*|*xterm*|(dt|k|E)term)
+case "$TERM" in (alacritty|rxvt|rxvt-*|st|st-*|*xterm*|(dt|k|E)term)
     local term_title () { print -n "\e]0;${(j: :q)@}\a" }
     precmd () {
       local DIR="$(print -P '%2c:')"
@@ -118,7 +118,7 @@ if [ -n "$RANGER_LEVEL" ]; then export PS1="[ranger]$PS1"; fi
 #export QT_QPA_PLATFORMTHEME=qt5ct
 
 # remap caps to escape
-setxkbmap -option caps:escape
+#setxkbmap -option caps:escape
 # swap escape and caps
 # setxkbmap -option caps:swapescape
 
@@ -127,5 +127,4 @@ autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/bin/terraform terraform
 
 complete -C aws_completer aws
-
 

@@ -37,6 +37,9 @@
 !.config/sxhkd
 !.config/youtube-dl
 !.config/zathura
+!.config/zsh
+.config/zsh/plugins
+.config/zsh/.zcompdump
 !.bash_profile
 !.bashrc
 !.dmrc
