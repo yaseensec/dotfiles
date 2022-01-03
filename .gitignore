@@ -12,7 +12,7 @@
 !.config/gtk-2.0
 !.config/gtk-3.0
 !.config/i3
-!.config/lvim
+!.config/img
 !.config/mpd
 .config/mpd/*
 !.config/mpd/mpd.conf
