@@ -74,9 +74,6 @@ alias ym="yt-dlp --config-location '~/.config/youtube-dl/config-audio'"
 ## AUR-Helpers
 alias p="paru -Sc --noconfirm && paru -Syu --noconfirm"
 
-## Aria2
-alias aria2c="aria2c -j 16 -x 16 -s 16 -k 1M"
-
 ## systemd
 alias list-unit-files="systemctl list-unit-files --state=enabled"
 

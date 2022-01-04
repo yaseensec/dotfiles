@@ -9,4 +9,5 @@
 --audio-format mp3
 
 --downloader http:aria2c
---downloader-args "aria2c:-j 16 -x 16 -s 16 -k 1M"
+#--downloader-args "aria2c:-j 16 -x 16 -s 16 -k 1M"
+--downloader-args "aria2c:--conf-path=/home/yaseen/.config/youtube-dl/aria2.conf"

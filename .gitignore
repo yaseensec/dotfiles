@@ -3,6 +3,9 @@
 !.config/
 .config/*
 !.config/alacritty
+!.config/aria2/
+.config/aria2/*
+!.config/aria2/aria2.conf
 !.config/bookmenu
 !.config/cherrytree
 !.config/dunst
