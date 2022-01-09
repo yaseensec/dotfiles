@@ -52,9 +52,10 @@ alias m="git checkout master"
 alias s="git checkout stable"
 
 ## SSH
-alias ssh-enigma="ssh yaseen@192.168.122.111"
+alias ssh-node1="ssh yaseen@192.168.122.214"
 alias ssh-node2="ssh yaseen@192.168.122.77"
 alias ssh-rhel="ssh root@192.168.122.31"
+alias ssh-rhelimg="ssh yaseen@192.168.122.213"
 alias ssh-tx="ssh u0_a214@192.168.0.3 -p 8022"
 
 ## Docker
