@@ -1,0 +1,111 @@
+{
+	"window-size": {
+		"width": 1366,
+		"height": 746
+	},
+	"url": "https://music.youtube.com/watch?v=du2ZqtrlYzM&list=RDAMVMiv7lcUkFVSc&index=0",
+	"options": {
+		"tray": true,
+		"appVisible": false,
+		"autoUpdates": true,
+		"hideMenu": false,
+		"startAtLogin": false,
+		"disableHardwareAcceleration": false,
+		"restartOnConfigChanges": false,
+		"trayClickPlayPause": true,
+		"autoResetAppCache": false,
+		"resumeOnStart": true,
+		"proxy": "",
+		"hideMenuWarned": true
+	},
+	"plugins": {
+		"navigation": {
+			"enabled": true
+		},
+		"adblocker": {
+			"enabled": true,
+			"cache": true,
+			"additionalBlockLists": []
+		},
+		"shortcuts": {
+			"enabled": true,
+			"overrideMediaKeys": false,
+			"global": {
+				"previous": "Shift+Left",
+				"playPause": "Shift+Enter",
+				"next": "Shift+Right"
+			},
+			"local": {
+				"goToSettings": "CommandOrControl+X",
+				"maximizeMinimisePlayer": "CommandOrControl+Y"
+			}
+		},
+		"downloader": {
+			"enabled": false,
+			"ffmpegArgs": []
+		},
+		"last-fm": {
+			"enabled": false,
+			"api_root": "http://ws.audioscrobbler.com/2.0/",
+			"api_key": "04d76faaac8726e60988e14c105d421a",
+			"secret": "a5d2a36fdf64819290f6982481eaffa2"
+		},
+		"discord": {
+			"enabled": false,
+			"activityTimoutEnabled": true,
+			"activityTimoutTime": 600000,
+			"listenAlong": true
+		},
+		"notifications": {
+			"enabled": true,
+			"unpauseNotification": false,
+			"urgency": "normal",
+			"interactive": false
+		},
+		"precise-volume": {
+			"enabled": false,
+			"steps": 1,
+			"arrowsShortcut": true,
+			"globalShortcuts": {
+				"volumeUp": "",
+				"volumeDown": ""
+			}
+		},
+		"sponsorblock": {
+			"enabled": false,
+			"apiURL": "https://sponsor.ajay.app",
+			"categories": [
+				"sponsor",
+				"intro",
+				"outro",
+				"interaction",
+				"selfpromo",
+				"music_offtopic"
+			]
+		},
+		"video-toggle": {
+			"enabled": true,
+			"forceHide": false,
+			"hideVideo": true
+		},
+		"in-app-menu": {
+			"enabled": false
+		},
+		"lyrics-genius": {
+			"enabled": true
+		},
+		"taskbar-mediacontrol": {
+			"enabled": false
+		}
+	},
+	"__internal__": {
+		"migrations": {
+			"version": "1.14.0"
+		}
+	},
+	"window-position": {
+		"x": 0,
+		"y": 22
+	},
+	"window-maximized": false
+}

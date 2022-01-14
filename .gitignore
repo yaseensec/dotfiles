@@ -39,6 +39,9 @@
 !.config/ranger/scope.sh
 !.config/sxhkd
 !.config/youtube-dl
+!.config/YouTube Music
+.config/YouTube Music/*
+!.config/YouTube Music/config.json
 !.config/zathura
 !.config/zsh
 .config/zsh/plugins
