@@ -10,3 +10,8 @@ sync & watch -n 1 grep -e Dirty: /proc/meminfo
 #Jenkins POST requests
 curl -X POST https://jenkins.yaseenins.com/job/job-name/build --user admin:admintoken #Starts building the specified job
 curl -X POST https://jenkins.yaseenins.com/job/job-name/buildnumber/kill --user admin:admintoken # kills the job
+
+#Virt-Install kickstart
+sudo virt-install --name time --memory=2048 --vcpu=2 --os-type=generic --disk pool=pool,size=20 --location /home/yaseen/VM/rhel-8.5-x86_64-dvd.iso --network network:default --graphics=none --os-variant=rhel8.5 --console pty,target_type=serial --initrd-inject /home/yaseen/VM/min.cfg --extra-args "inst.ks=file:/min.cfg console=tty0 console=ttyS0,115200n8"
+
+--Install cdrtools (for isoinfo error)
