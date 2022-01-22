@@ -14,4 +14,8 @@ curl -X POST https://jenkins.yaseenins.com/job/job-name/buildnumber/kill --user 
 #Virt-Install kickstart
 sudo virt-install --name time --memory=2048 --vcpu=2 --os-type=generic --disk pool=pool,size=20 --location /home/yaseen/VM/rhel-8.5-x86_64-dvd.iso --network network:default --graphics=none --os-variant=rhel8.5 --console pty,target_type=serial --initrd-inject /home/yaseen/VM/min.cfg --extra-args "inst.ks=file:/min.cfg console=tty0 console=ttyS0,115200n8"
 
+sudo virt-install --name Entropy --memory=2048 --vcpu=2 --os-type=generic --boot=uefi,loader=/usr/share/edk2-ovmf/x64/OVMF_CODE.secboot.fd,loader.readonly=yes,loader.type=pflash,nvram.template=/home/yaseen/VM/ovmf/OVMF_VARS.secboot.fd,loader_secure=yes --disk pool=default,size=20 --location /home/yaseen/VM/ISO/rhel8.5.iso --network network:default --graphics=none --os-variant=rhel8.5 --console pty,target_type=serial --initrd-inject /home/yaseen/VM/KS/minimal.cfg --extra-args "inst.ks=file:/minimal.cfg console=tty0 console=ttyS0,115200n8" --features smm.state=on
+
+sudo virt-install --name test --memory=2048 --vcpu=1 --network network:default --os-type=linux --boot loader=$HOME/VM/ovmf/OVMF_CODE.secboot.fd,loader.readonly=yes,loader.type=pflash,nvram.template=$HOME/VM/ovmf/OVMF_VARS.secboot.fd,loader_secure=yes --disk pool=default,size=20 --location $HOME/VM/ISO/rhel8.5.iso --graphics=spice --console pty,target_type=virtio --os-variant=rhel8.5 --video=qxl --initrd-inject $HOME/VM/KS/minimal.cfg --extra-args "inst.ks=file:/minimal.cfg" --features smm.state=on
+
 --Install cdrtools (for isoinfo error)

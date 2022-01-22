@@ -3,7 +3,7 @@
 		"width": 1366,
 		"height": 746
 	},
-	"url": "https://music.youtube.com/watch?v=xRb8hxwN5zc&list=RDAMVMiv7lcUkFVSc&index=0",
+	"url": "https://music.youtube.com/watch?v=b4hrUSBP4nc&list=RDAMVMzZasH6qkn8M&index=0",
 	"options": {
 		"tray": true,
 		"appVisible": false,
@@ -13,8 +13,8 @@
 		"disableHardwareAcceleration": false,
 		"restartOnConfigChanges": false,
 		"trayClickPlayPause": true,
-		"autoResetAppCache": false,
-		"resumeOnStart": true,
+		"autoResetAppCache": true,
+		"resumeOnStart": false,
 		"proxy": "",
 		"hideMenuWarned": true
 	},
@@ -58,7 +58,7 @@
 		},
 		"notifications": {
 			"enabled": true,
-			"unpauseNotification": false,
+			"unpauseNotification": true,
 			"urgency": "normal",
 			"interactive": false
 		},
@@ -95,6 +95,9 @@
 			"enabled": true
 		},
 		"taskbar-mediacontrol": {
+			"enabled": true
+		},
+		"quality-changer": {
 			"enabled": true
 		}
 	},
