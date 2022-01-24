@@ -1,33 +1,66 @@
 #!/usr/bin/env bash
-
 read -p "Boot VM with UEFI [YES | NO]: " UEFI
+  case "$UEFI" in
+    [yY]|[yY][eE][sS]) 
+        read -p "Boot VM with Secureboot [YES | NO]: " SB
+        case "$SB" in
+          [yy]|[yY][eE][sS])
+            BOOT=loader=/usr/share/edk2-ovmf/x64/OVMF_CODE.secboot.fd,loader.readonly=yes,loader.type=pflash,nvram.template=/usr/share/edk2-ovmf/x64/OVMF_VARS.secboot.fd,loader_secure=yes 
+            FEATURES=smm.state=on
+            #BOOT=firmware=efi,loader_secure=yes #This doesnt seem to work in Arch atleast as suggested by libivirt
+            echo --------------------------------------
+            echo "Booting VM with UEFI and SecureBoot "
+            echo --------------------------------------
+            echo
+          ;;
+          [nN]|[nN][oO])
+            BOOT=loader=/usr/share/edk2-ovmf/x64/OVMF_CODE.fd,loader.readonly=yes
+            FEATURES=smm.state=off
+            echo ----------------------
+            echo "Booting VM with UEFI"
+            echo ----------------------
+            echo
 
-if [[ $UEFI = YES  ]]; then
-  read -p "Boot VM with Secureboot [YES | NO]: " SB
-    if [[ $SB = YES ]]; then
-      BOOT=loader=/usr/share/edk2-ovmf/x64/OVMF_CODE.secboot.fd,loader.readonly=yes,loader.type=pflash,nvram.template=/usr/share/edk2-ovmf/x64/OVMF_VARS.secboot.fd,loader_secure=yes 
-      FEATURES=smm.state=on
-      #BOOT=firmware=efi,loader_secure=yes #This doesnt seem to work in Arch atleast as suggested by libivirt
-      echo --------------------------------------
-      echo "Booting VM with UEFI and SecureBoot "
-      echo --------------------------------------
-      echo
-      else
-        BOOT=loader=/usr/share/edk2-ovmf/x64/OVMF_CODE.fd,loader.readonly=yes
-        FEATURES=smm.state=off
-        echo ----------------------
-        echo "Booting VM with UEFI"
-        echo ----------------------
-        echo
-    fi 
-  else
-    BOOT=hd
-    FEATURES=smm.state=off
-    echo ----------------------
-    echo "Booting VM with BIOS"
-    echo ----------------------
-    echo
-fi
+          ;;
+        esac
+    ;;
+    [nN]|[nN][oO])
+          BOOT=hd
+          FEATURES=smm.state=off
+          echo ----------------------
+          echo "Booting VM with BIOS"
+          echo ----------------------
+          echo
+    ;;
+  esac
+  
+
+# if [[ $UEFI = YES  ]]; then
+#   read -p "Boot VM with Secureboot [YES | NO]: " SB
+#     if [[ $SB = YES ]]; then
+#       BOOT=loader=/usr/share/edk2-ovmf/x64/OVMF_CODE.secboot.fd,loader.readonly=yes,loader.type=pflash,nvram.template=/usr/share/edk2-ovmf/x64/OVMF_VARS.secboot.fd,loader_secure=yes 
+#       FEATURES=smm.state=on
+#       #BOOT=firmware=efi,loader_secure=yes #This doesnt seem to work in Arch atleast as suggested by libivirt
+#       echo --------------------------------------
+#       echo "Booting VM with UEFI and SecureBoot "
+#       echo --------------------------------------
+#       echo
+#       else
+#         BOOT=loader=/usr/share/edk2-ovmf/x64/OVMF_CODE.fd,loader.readonly=yes
+#         FEATURES=smm.state=off
+#         echo ----------------------
+#         echo "Booting VM with UEFI"
+#         echo ----------------------
+#         echo
+#     fi 
+#   else
+#     BOOT=hd
+#     FEATURES=smm.state=off
+#     echo ----------------------
+#     echo "Booting VM with BIOS"
+#     echo ----------------------
+#     echo
+# fi
 
 #Variables
 
