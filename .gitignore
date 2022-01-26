@@ -7,7 +7,9 @@
 .config/aria2/*
 !.config/aria2/aria2.conf
 !.config/bookmenu
-!.config/cherrytree
+!.config/cherrytree/
+.config/cherrytree/*
+!.config/cherrytree/styles/*
 !.config/dunst
 !.config/easyeffects
 !.config/gtkrc
@@ -25,8 +27,6 @@
 .config/ncmpcpp/*
 !.config/ncmpcpp/config
 !.config/neofetch
-.config/nvim/*
-!.config/nvim/init.vim
 !.config/polybar
 !.config/picom
 !.config/rofi
