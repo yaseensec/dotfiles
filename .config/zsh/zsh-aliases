@@ -46,7 +46,7 @@ alias gpg-retrieve="gpg2 --keyserver-options auto-key-retrieve --receive-keys"
 alias archlinx-fix-keys="sudo pacman-key --init && sudo pacman-key --populate archlinux && sudo pacman-key --refresh-keys"
 
 ## Git
-alias dotfiles="/usr/bin/git --git-dir=$HOME/Git/Github/dotfiles/ --work-tree=$HOME"
+alias dotfiles="/usr/bin/git --git-dir=$HOME/Git/Github/LINUX/dotfiles/ --work-tree=$HOME"
 alias g='lazygit'
 alias m="git checkout master"
 alias s="git checkout stable"
