@@ -38,6 +38,7 @@
 !.config/ranger/rifle.conf
 !.config/ranger/scope.sh
 !.config/sxhkd
+!.config/tmux
 !.config/youtube-dl
 !.config/YouTube Music
 .config/YouTube Music/*
