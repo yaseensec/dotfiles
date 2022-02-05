@@ -1,0 +1,15 @@
+/* this is the box (and the version) that we want to download from: https://app.vagrantup.com/debian/boxes/jessie64 */
+wget https://app.vagrantup.com/debian/boxes/jessie64/versions/8.9.0/providers/virtualbox.box -O debian-jessie64-8.9.0.box
+
+/* add the box to vagrant */
+vagrant box add debian/jessie64 debian-jessie64-8.9.0.box
+
+/* update box version */
+cd ~/.vagrant.d/boxes/debian-VAGRANTSLASH-jessie64/
+mv 0 8.9.0
+
+/* create metadata_url file */
+echo -n "https://app.vagrantup.com/debian/boxes/jessie64" > metadata_url
+
+/* show vagrant boxes */
+vagrant box list
