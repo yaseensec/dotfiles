@@ -122,9 +122,12 @@ setxkbmap -option caps:escape
 # swap escape and caps
 # setxkbmap -option caps:swapescape
 
-## Auto Completion Terraform and AWS-CLI
+## Auto Completion Terraform,Packer and AWS-CLI
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/bin/terraform terraform
+
+#autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /usr/bin/packer packer
 
 complete -C aws_completer aws
 
