@@ -2,7 +2,7 @@
 # Any customization should be done in ~/.gtkrc-2.0.mine instead.
 
 include "/home/yaseen/.gtkrc-2.0.mine"
-gtk-theme-name="Layan-dark"
+gtk-theme-name="Layan-dark-solid"
 gtk-icon-theme-name="Sardi-Orb-Colora"
 gtk-font-name="Sans 9"
 gtk-cursor-theme-name="Adwaita"

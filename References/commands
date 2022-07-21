@@ -2,7 +2,8 @@
 echo 'hash  filename' | sha256sum -c -
 
 #Pull Docker Images
-for each in {jenkins/jenkins:latest,alpine:latest,sonatype/nexus3:latest,tomcat:latest,nicolaka/netshoot:latest,maven:latest,mariadb:latest,ubuntu:latest,jc21/nginx-proxy-manager:latest,portainer/portainer-ce:latest,b4bz/homer:latest,linuxserver/heimdall:latest,postgres:latest,sonarqube:latest};do docker pull $each;done
+
+for each in {alpine:latest,b4bz/homer:latest,centos:latest,gitlab/gitlab-ce:latest,httpd:latest,jc21/nginx-proxy-manager:latest,jenkins/jenkins:latest,linuxserver/heimdall:latest,maven:latest,mariadb:latest,nginx:latest,nicolaka/netshoot:latest,openjdk:11,portainer/portainer-ce:latest,postgres:latest,sonarqube:latest,sonatype/nexus3:latest,tomcat:latest,tomcat:9,ubuntu:latest};do docker pull $each;done
 
 #sync and watch
 sync & watch -n 1 grep -e Dirty: /proc/meminfo
