@@ -75,7 +75,7 @@ alias yv="yt-dlp --config-location '~/.config/youtube-dl/config-video'"
 alias ym="yt-dlp --config-location '~/.config/youtube-dl/config-audio'"
 
 ## AUR-Helpers
-alias p="paru -Sc --noconfirm && paru -Syu --noconfirm"
+alias p="sudo paccache -r && paru -Scca --noconfirm && paru -Syu --noconfirm"
 
 ## systemd
 alias list-unit-files="systemctl list-unit-files --state=enabled"
