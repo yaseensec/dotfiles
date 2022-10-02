@@ -229,8 +229,12 @@ bindsym $mod+a focus parent
 #############################
 
 # Configure border style <normal|1pixel|pixel xx|none|pixel>
-new_window pixel 1
-new_float normal
+#new_window pixel 0
+#new_float normal
+for_window [all] border pixel 
+
+default_border pixel
+default_floating_border pixel
 
 # Hide borders
 hide_edge_borders none
