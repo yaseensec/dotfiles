@@ -60,6 +60,7 @@ alias ssh-antimatter="ssh yaseen@192.168.0.50"
 alias ssh-gravity="ssh yaseen@192.168.0.60"
 alias ssh-spacetime="ssh yaseen@192.168.0.70"
 alias proxmox="ssh yaseen@192.168.0.100"
+alias jenkins="ssh -i ~/AWS/darkrose/Linux.pem ec2-user@jenkins.yaseenins.com"
 
 ## Docker
 alias std="sudo systemctl start docker"
@@ -76,7 +77,8 @@ alias yv="yt-dlp --config-location '~/.config/youtube-dl/config-video'"
 alias ym="yt-dlp --config-location '~/.config/youtube-dl/config-audio'"
 
 ## AUR-Helpers
-alias p="sudo paccache -r && paru -Scca --noconfirm && paru -Syu --noconfirm"
+#alias p="sudo paccache -r && paru -Scca --noconfirm && paru -Syu --noconfirm"
+alias p="sudo pacman -Scc --noconfirm && paru -Scca --noconfirm && paru -Syu --noconfirm"
 
 ## systemd
 alias list-unit-files="systemctl list-unit-files --state=enabled"
@@ -86,6 +88,7 @@ alias iplbd="sudo ip link set br0 down"
 alias iplbu="sudo ip link set br0 up"
 alias py="python"
 alias blue="sudo systemctl start bluetooth.service"
+alias blues="sudo systemctl stop bluetooth.service"
 
 
 
