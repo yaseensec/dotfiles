@@ -1,0 +1,12 @@
+authorized_keys : Filled with public keys of the user who are connecting into the server using thier respective private keys 
+  - Contains public key from the remote connecting user's home directory's .ssh folder -- which has .pub as suffix or any contents of any other public key file in that directory 
+  - This gets filled when remote user used ssh user@server command
+
+known_hosts : Filled with public keys of the server the user connected to either using password or the private keys
+  - Contains public key or keys from the remote server's /etc/ssh/ directory which has server public keys with .pub suffix
+  - This gets filled when we use command ssh user@server
+
+ssh-copy-id -i path-of-the-user's-public-key user@server -- Copies users public key onto the authorized_keys of the remote server
+  - Asks for password if PasswordAuthentication is enabled in sshd_config in remote server else throws permission denied error 
+  - If PasswordAuthentication is disabled in remote server and if we have Private key and want to add another public key through ssh-copy-id then    command is ssh-copy-id -f -i path-of-public-key "-o IdentityFile path-of-private-key" user@server 
+
