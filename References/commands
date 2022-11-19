@@ -3,7 +3,7 @@ echo 'hash  filename' | sha256sum -c -
 
 #Pull Docker Images
 
-for each in {alpine:latest,b4bz/homer:latest,centos:latest,gitlab/gitlab-ce:latest,httpd:latest,jc21/nginx-proxy-manager:latest,jenkins/jenkins:latest,linuxserver/heimdall:latest,maven:latest,mariadb:latest,nginx:latest,nicolaka/netshoot:latest,openjdk:11,portainer/portainer-ce:latest,postgres:latest,sonarqube:latest,sonatype/nexus3:latest,tomcat:latest,tomcat:9,ubuntu:latest};do docker pull $each;done
+for each in {alpine:latest,b4bz/homer:latest,centos:latest,gitlab/gitlab-ce:latest,httpd:latest,jc21/nginx-proxy-manager:latest,jenkins/jenkins:latest,linuxserver/heimdall:latest,maven:latest,mariadb:latest,nginx:latest,nicolaka/netshoot:latest,openjdk:11,portainer/portainer-ce:latest,postgres:latest,python:3.9-slim-buster,rancher/rancher:latest,sonarqube:latest,sonatype/nexus3:latest,tomcat:latest,tomcat:9,ubuntu:latest};do docker pull $each;done
 
 
 #Remove docker <none> images
