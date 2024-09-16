@@ -12,3 +12,4 @@ export COLORTERM="truecolor"
 export OPENER="xdg-open"
 export PAGER="less"
 export WM="i3"
+

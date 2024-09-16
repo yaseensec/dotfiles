@@ -61,6 +61,15 @@ alias ssh-gravity="ssh yaseen@192.168.0.60"
 alias ssh-spacetime="ssh yaseen@192.168.0.70"
 alias proxmox="ssh yaseen@192.168.0.100"
 alias jenkins="ssh -i ~/AWS/darkrose/Linux.pem ec2-user@jenkins.yaseenins.com"
+alias jk="ssh -i ~/Documents/ssh-keys/id_ed25519 root@jk.yaseenins.com"
+alias gitlab="ssh -i ~/Documents/ssh-keys/id_ed25519 root@gitlab.yaseenins.com"
+alias node1-jk="ssh -i ~/Documents/ssh-keys/id_ed25519 root@node1.jk.yaseenins.com"
+alias pihole="ssh -i ~/Documents/ssh-keys/id_ed25519 root@pihole.yaseenins.com"
+alias master1="ssh -i ~/Documents/ssh-keys/id_ed25519 yaseen@192.168.0.101"
+alias master2="ssh -i ~/Documents/ssh-keys/id_ed25519 yaseen@192.168.0.102"
+alias node1="ssh -i ~/Documents/ssh-keys/id_ed25519 yaseen@192.168.0.111"
+alias node2="ssh -i ~/Documents/ssh-keys/id_ed25519 yaseen@192.168.0.112"
+alias node3="ssh -i ~/Documents/ssh-keys/id_ed25519 yaseen@192.168.0.113"
 
 ## Docker
 alias std="sudo systemctl start docker"
@@ -79,6 +88,7 @@ alias ym="yt-dlp --config-location '~/.config/youtube-dl/config-audio'"
 ## AUR-Helpers
 #alias p="sudo paccache -r && paru -Scca --noconfirm && paru -Syu --noconfirm"
 alias p="sudo pacman -Scc --noconfirm && paru -Scca --noconfirm && paru -Syu --noconfirm"
+alias r="sudo rm -rf /var/cache/pacman/pkg/*"
 
 ## systemd
 alias list-unit-files="systemctl list-unit-files --state=enabled"

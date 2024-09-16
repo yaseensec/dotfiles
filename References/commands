@@ -24,3 +24,6 @@ sudo virt-install --name Entropy --memory=2048 --vcpu=2 --os-type=generic --boot
 sudo virt-install --name test --memory=2048 --vcpu=1 --network network:default --os-type=linux --boot loader=$HOME/VM/ovmf/OVMF_CODE.secboot.fd,loader.readonly=yes,loader.type=pflash,nvram.template=$HOME/VM/ovmf/OVMF_VARS.secboot.fd,loader_secure=yes --disk pool=default,size=20 --location $HOME/VM/ISO/rhel8.5.iso --graphics=spice --console pty,target_type=virtio --os-variant=rhel8.5 --video=qxl --initrd-inject $HOME/VM/KS/minimal.cfg --extra-args "inst.ks=file:/minimal.cfg" --features smm.state=on
 
 --Install cdrtools (for isoinfo error)
+
+Lets Encrypt Certs Renewal
+sudo certbot certonly --dns-cloudflare --dns-cloudflare-credentials /root/.secrets/cloudflare.ini -d "yaseenins.com","*.yaseenins.com" --preferred-challenges dns-01
